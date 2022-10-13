@@ -1,8 +1,10 @@
 import React from 'react'
 import DestCard from '../components/cards/trending_dest_card'
+import Navbar from '../components/navbar/navbar'
 const Home = () => {
   return (
     <div className=''>Home
+    <div><Navbar/></div>
 
     {/* trending destinations block */}
     <div>
