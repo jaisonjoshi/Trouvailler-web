@@ -8,7 +8,7 @@ const trending_dest_card = () => {
             <h3 className='text-lg font-bold'>Villa with private jacuzzi (Idukki)</h3>
             <p className='text-sm text-justify'>Villas that are the very definition of luxury, exclusive, serene - equipped with a Jacuzzi, the best in amenities and tastefully furnished.</p>
         </div>
-        <div className='bg-white rounded-xl font-semibold absolute top-0 m-3 p-2'>
+        <div className='bg-whiteglow rounded-xl font-semibold absolute top-0 m-3 p-2'>
         From ₹ 11,999
         </div>
     </div>
