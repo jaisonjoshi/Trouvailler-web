@@ -2,62 +2,100 @@ import React from 'react'
 
 const navbar = () => {
   return (
-
-    <div className=''>
-      <div className='md:'>
+    <div>
+      <nav className='flex justify-between '>
         <div>
-          <img src=''>
-
-          </img>
+          <img className='' src={require('../../Assets/TrouvaillerGreen .png')} alt="logo"></img>
         </div>
-        <div className='md:flex text-xs mt-2'>
-          <nav className=''>
-            <ul className=' text-gray-300 md:flex md:items-center md:justify-end">
-      '>
-              <li className='mx-4 my-6 md:my-0 hover:text-green-300 duration-500 transition ease-in-out '>
-                <a href='#' className='md:ml-2'>
-                  Tours
-                </a>
-              </li>
-
-              <li className='mx-4 my-6 md:my-0 hover:text-green-300 duration-500 transition ease-in-out' >
-                <a href='#' className='md:ml-2'>
-                  My bids
-                </a>
-              </li>
-
-              <li className='mx-4 my-6 md:my-0 hover:text-green-300 duration-500 transition ease-in-out '>
-                <a href='#' className='md:ml-2'>
-                  About us
-                </a>
-              </li>
-
-              <li className='mx-4 my-6 md:my-0 hover:text-green-300 duration-500 transition ease-in-out '>
-                <a href='#' className='md:ml-2'>
-                  Contact us
-                </a>
-              </li>
-
-            </ul>
-
-            <button className='mx-4 my-6 md:my-0'>
-              Search
-            </button>
-
-            <button className='mx-4 my-6 md:my-0'>
-              Login
-            </button>
-            
-            <button className='mx-4 my-6 md:my-0'>
-              Signup
-            </button>
-
-          </nav>
+        <div>
+          <ul className='flex justify-center sm:justify-evenly'>
+            <li className='mr-6'>
+              <a className='text-graydust-dark hover:text-blacky-dark duration-500 transition ease-in-out'>
+                Tours
+              </a>
+            </li>
+            <li className='mr-6'>
+              <a className='text-graydust-dark hover:text-blacky-dark duration-500 transition ease-in-out'>
+                My bids
+              </a>
+            </li>
+            <li className='mr-6'>
+              <a className='text-graydust-dark hover:text-blacky-dark duration-500 transition ease-in-out'>
+                About us
+              </a>
+            </li>
+            <li className='mr-6'>
+              <a className='text-graydust-dark hover:text-blacky-dark duration-500 transition ease-in-out'>
+                Contact us
+              </a>
+            </li>
+            <li>
+              <button className='border rounded flex justify-end mx-2'>
+                <img className='' src={require('../../Assets/Search.png')} alt="search"></img>
+                <span className='text-gray-dark'>Search</span>
+              </button>
+            </li>
+            <li>
+              <button className='border rounded mx-2'>
+                Login
+              </button>
+            </li>
+            <li>
+              <button className='border rounded mx-2'>
+                Signup
+              </button>
+            </li>
+          </ul>
         </div>
-      </div>
+      </nav>
     </div>
+    // <div>
 
-    )
+    //   <div>
+    //     <img className='' src='../../Assets/TrouvaillerGreen.png' alt="logo"></img>
+    //   </div>
+    //   <div className='inline'>
+    //     <nav>
+    // <ul className='flex justify-center sm:justify-center'>
+    //   <li className='mr-6'>
+    //     <a className='text-graydust-dark hover:text-blacky-dark duration-500 transition ease-in-out'>
+    //       Tours
+    //     </a>
+    //   </li>
+    //   <li className='mr-6'>
+    //     <a className='text-graydust-dark hover:text-blacky-dark duration-500 transition ease-in-out'>
+    //       My bids
+    //     </a>
+    //   </li>
+    //   <li className='mr-6'>
+    //     <a className='text-graydust-dark hover:text-blacky-dark duration-500 transition ease-in-out'>
+    //       About us
+    //     </a>
+    //   </li>
+    //   <li className='mr-6'>
+    //     <a className='text-graydust-dark hover:text-blacky-dark duration-500 transition ease-in-out'>
+    //       Contact us
+    //     </a>
+    //   </li>
+    // </ul>
+    //     </nav>
+
+    // <button className='border rounded flex justify-end'>
+    //     <img src='../../Assets/Search.png' alt="search"></img>
+    //     <span className='text-gray-dark'>Search</span>
+    //   </button>
+
+    //       <a href='#' className='text-blacky hover:bg-blacky-dark hover:text-whiteglow duration-500 transition ease-in-out border rounded'>
+    //         Login
+    //       </a>
+
+    //       <a href='#' className='w-40 bg-evergreen text-blacky-dark border rounded hover:text-whiteglow hover:bg-blacky-dark'>
+    //         Signup
+    //       </a>
+
+    //   </div>
+    // </div>
+  )
 }
 
 export default navbar
