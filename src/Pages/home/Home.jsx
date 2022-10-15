@@ -24,7 +24,7 @@ const Home = () => {
         <DestCard />
       </div>
       <div className='p-7 text-center'>
-        <button className='font-medium border-graydust-dark border p-2 rounded-md w-full sm:w-48 hover:bg-evergreen hover:text-whiteglow hover:border-transparent hover:transition-colors hover:duration-200' >More destinations</button>
+        <button className='font-medium border-graydust-dark border p-2 rounded-md w-full sm:w-auto px-10 hover:bg-evergreen hover:text-whiteglow hover:border-transparent hover:transition-colors hover:duration-200' >More destinations</button>
       </div>
 
       {/* reviews block */}
@@ -32,6 +32,7 @@ const Home = () => {
         <h1 className='font-bold text-2xl text-center pt-7'>Reviews</h1>
         <div className='hidden sm:block px-20'><Review/></div>
         <div className='sm:hidden'><ReviewMob/></div>
+        <div className='text-center py-10'><button className='bg-blacky-dark text-whiteglow font-semibold p-2 px-10 rounded-md w-full sm:w-auto hover:bg-evergreen hover:text-blacky-dark'>More reviews</button></div>
       </div>
     </div>
   )
