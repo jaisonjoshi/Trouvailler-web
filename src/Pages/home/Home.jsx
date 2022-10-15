@@ -32,7 +32,7 @@ const Home = () => {
         <h1 className='font-bold text-2xl text-center pt-7'>Reviews</h1>
         <div className='hidden sm:block px-20'><Review/></div>
         <div className='sm:hidden'><ReviewMob/></div>
-        <div className='text-center py-10'><button className='bg-blacky-dark text-whiteglow font-semibold p-2 px-10 rounded-md w-full sm:w-auto hover:bg-evergreen hover:text-blacky-dark'>More reviews</button></div>
+        <div className='text-center py-10 px-7'><button className='bg-blacky-dark text-whiteglow font-semibold p-2 px-10 rounded-md w-full sm:w-auto hover:bg-evergreen hover:text-blacky-dark hover:transition-colors hover:duration-200'>More reviews</button></div>
       </div>
     </div>
   )
