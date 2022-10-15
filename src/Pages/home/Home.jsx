@@ -28,12 +28,11 @@ const Home = () => {
       </div>
 
       {/* reviews block */}
-      <div className='bg-graydust-light px-20'>
+      <div className='bg-graydust-light'>
         <h1 className='font-bold text-2xl text-center pt-7'>Reviews</h1>
-        <Review className='hidden sm:block'/>
-        <ReviewMob className='sm:hidden'/>
+        <div className='hidden sm:block px-20'><Review/></div>
+        <div className='sm:hidden'><ReviewMob/></div>
       </div>
-      
     </div>
   )
 }
