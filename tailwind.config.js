@@ -7,7 +7,6 @@ module.exports = {
     colors: {
       transparent: 'transparent',
       'evergreen':'#2AF599',
-      'midnight':'#303030',
       'whiteglow': '#FFFFFF',
       'blacky': {
         'dark':'#000000',
