@@ -8,7 +8,7 @@ const navbar = () => {
           <img className='' src={require('../../Assets/TrouvaillerGreen .png')} alt="logo"></img>
         </div>
         <div>
-          <ul className='flex justify-center sm:justify-evenly'>
+          <ul className='md:flex justify-center'>
             <li className='mr-6'>
               <a className='text-graydust-dark hover:text-blacky-dark duration-500 transition ease-in-out'>
                 Tours
@@ -30,18 +30,12 @@ const navbar = () => {
               </a>
             </li>
             <li>
-              <input type='text' className='border rounded flex justify-end mx-2'>
-                <img className='' src={require('../../Assets/Search.png')} alt="search"></img>
-                <span className='text-gray-dark'>Search</span>
-              </input>
-            </li>
-            <li>
-              <button className='border rounded mx-2'>
+              <button className='rounded-md mx-2 bg-whiteglow text-blacky-light hover:bg-blacky-dark hover:text-whiteglow border h-8 w-20 duration-500'>
                 Login
               </button>
             </li>
             <li>
-              <button className='border rounded mx-2'>
+              <button className='rounded-md mx-5 bg-evergreen text-blacky-dark border-transparent hover:bg-blacky-dark hover:text-whiteglow border h-8 w-20 duration-500'>
                 Signup
               </button>
             </li>
