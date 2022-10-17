@@ -15,6 +15,7 @@ module.exports = {
       },
       'graydust':{
         'light':'#F6F6F6',
+        'medium':'#666666',
         'dark':'#000000a6',
       }
     },
