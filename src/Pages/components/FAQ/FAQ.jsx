@@ -2,8 +2,8 @@ import React from 'react'
 
 const FAQ = () => {
     return (
-        <div className=''>
-            <details className='border border-graydust-normal mt-3 p-5 rounded-md hover:shadow-graydust-normal hover:shadow-sm'>
+        <div>
+            <details className='border border-graydust-normal mt-3 p-5 rounded-md hover:shadow-graydust-normal hover:shadow-md hover:transition-all'>
                 <summary>
                     <span className='pl-3'>
                         Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor?

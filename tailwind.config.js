@@ -14,6 +14,7 @@ module.exports = {
         'light':'#303030',
       },
       'graydust':{
+        'extralight':'#F7F7F7',
         'light':'#F6F6F6',
         'normal':'#949494',
         'medium':'#666666',
