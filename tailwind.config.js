@@ -21,7 +21,11 @@ module.exports = {
         'dark':'#000000a6',
       }
     },
-    extend: {},
+    extend: {
+      backgroundImage: {
+        'green-slop': "url('/public/images/Greenbg.png')",
+      },
+    },
   },
   plugins: [],
 }
