@@ -1,6 +1,7 @@
 import React from 'react'
 import DestCard from '../components/cards/trending_dest_card'
 import Navbar from '../components/navbar/navbar'
+import SpecialOffer from '../components/cards/special_offers_card'
 const Home = () => {
   return (
     <div className=''>Home
@@ -17,10 +18,15 @@ const Home = () => {
       </div>
 
 
-      <div className='flex bg-midnight w-full'>
-        <div className='w-2/3'>
-          <div className="">
-            <img src={require('../../Assets/clock.png')}></img>
+      <div className='md:flex bg-midnight w-full'>
+        <div className='w-full md:w-2/3'>
+          <div className="p-10 flex">
+            <div className="">
+              <img className='w-20 h-20' src={require('../Assets/clock.png')}></img>
+            </div>
+            <div className=" w-52 bg-whiteglow text-blacky-dark flex justify-center items-center text-xl font-bold border border-none rounded-full">
+              <p className="">Ends in 00:00:00</p>
+            </div>
           </div>
 
           <h1 className='font-bold text-4xl text-evergreen px-20 py-5'>
@@ -33,10 +39,29 @@ const Home = () => {
             <button className='font-bold text-lg border p-2 rounded-md w-full sm:w-48 bg-whiteglow hover:bg-evergreen border-transparent hover:border-transparent hover:transition-colors hover:duration-200' >Know More</button>
           </div>
         </div>
-        {/* <div className="">
-          <img src={require('../../Assets/Rectangle 43.png')}></img>
-        </div> */}
+        <div className="md:w-1/3 ">
+          <img className="object-cover h-full w-full" src={require('../Assets/Image.png')}></img>
+        </div>
       </div>
+
+      {/* special offers block */}
+
+      <div className="my-6">
+        <h1 className='text-center font-bold text-blacky-dark text-xl'>Special Offers</h1>
+      </div>
+
+      <div className='flex m-11 gap-5 overflow-x-scroll'>
+        <SpecialOffer />
+        <SpecialOffer />
+        <SpecialOffer />
+        <SpecialOffer />
+        <SpecialOffer />
+        <SpecialOffer />
+        <SpecialOffer />
+        <SpecialOffer />
+        <SpecialOffer />
+      </div>
+
 
 
       {/* trending destinations block */}
