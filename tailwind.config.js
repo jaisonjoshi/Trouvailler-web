@@ -7,7 +7,6 @@ module.exports = {
     colors: {
       transparent: 'transparent',
       'evergreen':'#2AF599',
-      'midnight':'#303030',
       'whiteglow': '#FFFFFF',
       'blacky': {
         'dark':'#000000',
@@ -15,11 +14,18 @@ module.exports = {
         'light':'#303030',
       },
       'graydust':{
+        'extralight':'#F7F7F7',
         'light':'#F6F6F6',
+        'normal':'#949494',
+        'medium':'#666666',
         'dark':'#000000a6',
       }
     },
-    extend: {},
+    extend: {
+      backgroundImage: {
+        'green-slop': "url('/public/images/Greenbg.png')",
+      },
+    },
   },
   plugins: [],
 }
