@@ -2,10 +2,14 @@ import React from 'react'
 import DestCard from '../components/cards/trending_dest_card'
 import Navbar from '../components/navbar/navbar'
 import SpecialOffer from '../components/cards/special_offers_card'
+import Background from '../components/background/background'
+
+
 const Home = () => {
   return (
-    <div className=''>Home
-      <div className=""><Navbar /></div>
+    <div className=''>
+      <div className=""><Navbar/></div>
+      <div className=""><Background/></div>
       <div>
         <h1 className='text-7xl text-justify font-bold p-7'>
           THE BEST TOURS
@@ -21,10 +25,10 @@ const Home = () => {
       <div className='md:flex bg-midnight w-full'>
         <div className='w-full md:w-2/3'>
           <div className="p-10 flex">
-            <div className="">
+            <div className="z-10">
               <img className='w-20 h-20' src={require('../Assets/clock.png')}></img>
             </div>
-            <div className=" w-52 bg-whiteglow text-blacky-dark flex justify-center items-center text-xl font-bold border border-none rounded-full">
+            <div className="z-20 w-52 bg-whiteglow text-blacky-dark flex justify-center items-center text-xl font-bold border border-none rounded-full">
               <p className="">Ends in 00:00:00</p>
             </div>
           </div>
