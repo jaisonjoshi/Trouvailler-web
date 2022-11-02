@@ -1,12 +1,11 @@
 import React from 'react';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
-import { faBell } from '@fortawesome/free-solid-svg-icons'
 import { solid, regular, brands, icon } from '@fortawesome/fontawesome-svg-core/import.macro'
 
 const BidStatusCard = () => {
     return (
         <div>
-            <div className='shadow-md shadow-graydust-medium p-5 m-2 rounded-lg'>
+            <div className='shadow-md shadow-graydust-normal p-5 my-5 rounded-lg'>
                 <div className='flex justify-between flex-wrap'>
                     <h1 className='text-2xl font-bold text-blacky-light'><span className='text-3xl font-light pr-2'><FontAwesomeIcon icon={solid('location-dot')} /></span>Where you want to go</h1>
                     <div className='bg-status-150 p-2 rounded-full border-graydust-normal'><h3><span className='text-status-100'><FontAwesomeIcon icon={solid('circle-check')} /></span> Accepted</h3> </div>
