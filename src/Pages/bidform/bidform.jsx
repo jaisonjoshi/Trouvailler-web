@@ -1,5 +1,6 @@
 import React from 'react'
 import Navbar from '../components/navbar/navbar'
+import Footer from '../components/Footer/Footer'
 const Bidform = () => {
     return (
         <div className="">
@@ -71,6 +72,7 @@ const Bidform = () => {
                 </div>
 
             </form>
+            <Footer/>
         </div>
     )
 }
