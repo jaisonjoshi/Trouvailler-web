@@ -1,28 +1,37 @@
 import React from 'react'
 import DestCard from '../components/cards/trending_dest_card'
 import Navbar from '../components/navbar/navbar'
-import SpecialOffer from '../components/cards/special_offers_card'
-import Background from '../components/background/background'
+import Offers from '../components/cards/special_offers_card'
+
 
 
 const Home = () => {
   return (
-    <div className=''>
-      <div className=""><Navbar/></div>
-      <div className=""><Background/></div>
-      <div>
-        <h1 className='text-7xl text-justify font-bold p-7'>
-          THE BEST TOURS
-          IN JUST 3 CLICKS
-        </h1>
-        <p className="text-justify text-base p-7">
-          Enter a country, a city or even just a landmark and we'll find the right tours for you
-        </p>
-        <div className=""></div>
+    <div className="">
+      <div className="bg-hero-image w-full h-screen object-cover justify-center">
+        <Navbar />
+        <div className="px-10 py-8 flex-row mid:w-4/6">
+          <h1 className="text-5xl text-whiteglow font-bold md:pt-36">
+            THE BEST TOURS IN JUST 3 CLICKS
+          </h1>
+          <p className="text-sm text-whiteglow py-5">
+            Enter a country, a city or even just a landmark and we'll find the right tours for you
+          </p>
+
+          <button className="flex justify-center items-center bg-evergreen text-blacky-medium w-36 font-bold rounded-md p-2 my-5 hover:bg-whiteglow duration-500">Explore
+            <img src={require('../Assets/Arrow.png')} alt="" className="h-3 w-3 mx-4 my-2" />
+          </button>
+
+        </div>
       </div>
 
 
-      <div className='md:flex bg-midnight w-full'>
+
+
+
+      {/* Bid section */}
+
+      <div className='md:flex bg-midnight w-full h-1/6'>
         <div className='w-full md:w-2/3'>
           <div className="p-10 flex">
             <div className="z-10">
@@ -50,21 +59,17 @@ const Home = () => {
 
       {/* special offers block */}
 
-      <div className="my-6">
+      <div className="mt-5">
         <h1 className='text-center font-bold text-blacky-dark text-xl'>Special Offers</h1>
+        
+      </div>
+      
+      <div className="mx-11">
+      <Offers />
       </div>
 
-      <div className='flex m-11 gap-5 overflow-x-scroll'>
-        <SpecialOffer />
-        <SpecialOffer />
-        <SpecialOffer />
-        <SpecialOffer />
-        <SpecialOffer />
-        <SpecialOffer />
-        <SpecialOffer />
-        <SpecialOffer />
-        <SpecialOffer />
-      </div>
+
+
 
 
 
@@ -88,7 +93,7 @@ const Home = () => {
       </div>
 
 
-    </div>
+    </div >
 
   )
 }

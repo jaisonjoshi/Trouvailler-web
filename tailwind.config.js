@@ -19,7 +19,11 @@ module.exports = {
         'dark':'#000000a6',
       }
     },
-    extend: {},
+    extend: {
+      backgroundImage : {
+        'hero-image' :'url("./Pages/Assets/b_img2.jpg")'
+      }
+    },
   },
-  plugins: [],
+  plugins: [require('tailwind-scrollbar-hide')],
 }

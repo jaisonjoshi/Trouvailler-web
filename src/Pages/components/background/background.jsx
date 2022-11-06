@@ -1,29 +1,45 @@
+import React from 'react'
 import "slick-carousel/slick/slick.css";
 import "slick-carousel/slick/slick-theme.css";
 import Slider from "react-slick";
 
-const Background = () => {
+const Reviews = () => {
     var settings = {
         dots: false,
         infinite: true,
         speed: 500,
-        slidesToShow: 3,
-        slidesToScroll: 1
+        slidesToShow: 1,
+        slidesToScroll: 1,
+        autoplay: true,
+        speed: 2000,
+        autoplaySpeed: 2000,
+        cssEase: "linear"
     };
     return (
         <Slider {...settings}>
-            <div className="">
-                <img src={require('../Assets/b_img1.png')} alt="" className="" />
-                <img src={require('../Assets/b_img1.png')} alt="" className="" />
-                <img src={require('../Assets/b_img1.png')} alt="" className="" />
-                <img src={require('../Assets/b_img1.png')} alt="" className="" />
-                <img src={require('../Assets/b_img1.png')} alt="" className="" />
-                <img src={require('../Assets/b_img1.png')} alt="" className="" />
-            </div>
+            <Background />
+            <Background />
+            <Background />
+            <Background />
         </Slider>
     );
 }
 
-
-
-export default Background
+const Background = () => {
+    return (
+        <div className="">
+            <div>
+                <img src={require('../../Assets/b_img1.jpg')} alt="" className="" />
+            </div>
+            <div>
+                <img src={require('../../Assets/b_img1.jpg')} alt="" className="" />
+            </div>
+            <div>
+                <img src={require('../../Assets/b_img1.jpg')} alt="" className="" />
+            </div>
+            <div>
+                <img src={require('../../Assets/b_img1.jpg')} alt="" className="" />
+            </div>
+        </div>
+    )
+}
