@@ -10,8 +10,8 @@ const list1_card = () => {
         </div>
         <div className="px-5 flex">
             <p className="text-lg text-blacky-light font-bold">2 Nights & 3 Days</p>
-            <img src={require('../../Assets/People.png')} alt="" className="pl-5" />
-            <img src={require('../../Assets/People.png')} alt="" className="" />
+            <img src={require('../../Assets/People.png')} alt="" className="pl-5 h-6" />
+            <img src={require('../../Assets/People.png')} alt="" className="h-6" />
         </div>
         <div className="p-5 flex justify-between">
             <p className="text-evergreen text-xl font-bold">₹1,600.00</p>

@@ -33,7 +33,7 @@ module.exports = {
     extend: {
 
       backgroundImage : {
-        'hero-image' :'url("./Pages/Assets/b_img2.jpg")',
+        'hero-image' :'url("./Pages/Assets/b_img1.png")',
         'green-slop': "url('/public/images/Greenbg.png')",
       }
 

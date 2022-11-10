@@ -3,7 +3,7 @@ import "slick-carousel/slick/slick.css";
 import "slick-carousel/slick/slick-theme.css";
 import Slider from "react-slick";
 
-const Reviews = () => {
+const BackgroundImage = () => {
     var settings = {
         dots: false,
         infinite: true,
@@ -17,29 +17,12 @@ const Reviews = () => {
     };
     return (
         <Slider {...settings}>
-            <Background />
-            <Background />
-            <Background />
-            <Background />
+            <img src={require('../../Assets/b_img1.jpg')} alt="" className="" />
+            <img src={require('../../Assets/b_img1.jpg')} alt="" className="" />
+            <img src={require('../../Assets/b_img1.jpg')} alt="" className="" />
+            <img src={require('../../Assets/b_img1.jpg')} alt="" className="" />
+            <img src={require('../../Assets/b_img1.jpg')} alt="" className="" />
         </Slider>
     );
 }
-
-const Background = () => {
-    return (
-        <div className="">
-            <div>
-                <img src={require('../../Assets/b_img1.jpg')} alt="" className="" />
-            </div>
-            <div>
-                <img src={require('../../Assets/b_img1.jpg')} alt="" className="" />
-            </div>
-            <div>
-                <img src={require('../../Assets/b_img1.jpg')} alt="" className="" />
-            </div>
-            <div>
-                <img src={require('../../Assets/b_img1.jpg')} alt="" className="" />
-            </div>
-        </div>
-    )
-}
+export default BackgroundImage

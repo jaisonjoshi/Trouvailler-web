@@ -10,7 +10,7 @@ const Offers = () => {
     arrows: false,
     infinite: false,
     speed: 500,
-    slidesToShow: 3.5,
+    slidesToShow: 2.5,
       slidesToScroll: 3,
       initialSlide: 0,
     responsive: [
@@ -52,11 +52,17 @@ const OfferCard = () => {
   return (
 
     <div className=" rounded-md m-5">
-      <div className="">
+      <div className="relative">
         <img src={require('../../Assets/SpecialOffer.png')} alt="" className=" rounded-md h-60 w-full object-cover" />
+        <div className="absolute bg-graydust-light opacity-90 top-40 w-full flex rounded-lg h-16 p-2">
+          <div className="text-xs md:text-sm w-1/3"><h6 className="text-blacky-light">City</h6><p className="text-blacky-dark">Newton Abbot</p></div>
+          <div className="text-xs md:text-sm w-1/3 pl-3 border-l-2 border-graydust-normal"><h6 className="text-blacky-light">Dates</h6><p className="text-blacky-dark">16-07-22</p></div>
+          <div className="text-xs md:text-sm w-1/3 pl-3 border-l-2 border-graydust-normal"><h6 className="text-blacky-light">Price</h6><p className="text-blacky-dark">₹ 4000</p></div>
+        </div>
       </div>
 
       {/*Texts*/}
+
       <div className="">
         <h3 className="text-blacky-medium font-bold text-lg">St.Louis Sanatorium</h3>
         <p className="text-blacky-medium text-justify text-sm">A small but cozy place to stay in Wisconsin. The resort is located on the shore of the river of the same name, within walking distance of the beach, pier, comic book store and Shevchenko Monument.</p>

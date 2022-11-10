@@ -8,11 +8,10 @@ import Footer from '../components/Footer/Footer'
 import { Link } from "react-router-dom";
 
 
-
 const Home = () => {
   return (
     <div className="">
-      <div className="bg-hero-image w-full h-screen">
+      <div className="bg-hero-image bg-cover w-full h-screen">
         <Navbar />
         <div className="px-10 py-8 flex-row mid:w-4/6">
           <h1 className="text-5xl text-whiteglow font-bold md:pt-36">
