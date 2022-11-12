@@ -39,19 +39,19 @@ const Bidform = () => {
                         </div>
                     </div>
 
-                    <div className="md:flex md:w-1/2">
-                        <div className="px-3 rounded-lg my-7 md:my-5 border md:border-r-transparent text-graydust-medium h-16 md:w-1/2 p-1 w-72"><h6 className="">Check in</h6><input type="date" className="outline-none" /></div>
-                        <div className="px-3 rounded-lg my-7 md:my-5 border text-graydust-medium md:border-l-2 h-16 md:w-1/2 p-1 w-72"><h6 className="">Check out</h6><input type="date" className="outline-none" /></div>
-                    </div>
+                    <div className="md:flex">
+                        <div className="px-3 rounded-lg my-7 md:my-5 border text-graydust-medium h-16 p-1 w-72"><h6 className="">Check in</h6><input type="date" className="outline-none" /></div>
+                        <div className="px-3 rounded-lg my-7 md:my-5 border text-graydust-medium h-16 md:ml-10 p-1 w-72"><h6 className="">Check out</h6><input type="date" className="outline-none" /></div>
+                    </div> 
 
                     <div className="md:flex mt-5">
                         <div className="flex border text-graydust-medium rounded-lg w-72 h-16">
                             <img src={require('../Assets/Person.png')} alt="" className="h-5 w-5 my-auto mx-4" />
-                            <input type="text" className="outline-none" placeholder="3 Guests" />
+                            <input type="number" className="outline-none" placeholder="3 Guests" />
                         </div>
                         <div className="flex md:mx-10 md:my-0 my-7 border text-graydust-medium rounded-lg w-72 h-16">
                             <img src={require('../Assets/Room.png')} alt="" className="h-5 w-5 my-auto mx-4" />
-                            <input type="text" className="outline-none" placeholder="3 Room" />
+                            <input type="number" className="outline-none" placeholder="3 Room" />
                         </div>
                     </div>
 
@@ -60,11 +60,11 @@ const Bidform = () => {
                     <div className="md:flex">
                         <div className="my-5">
                             <label for="min_budget" className="text-graydust-normal">Min</label>
-                            <input type="text" id="min_budget" name="min_budget" placeholder="₹1000" className="ml-5 p-3 outline-none border text-graydust-medium w-44 h-16 rounded-xl" />
+                            <input type="number" id="min_budget" name="min_budget" placeholder="₹1000" className="ml-5 p-3 outline-none border text-graydust-medium w-44 h-16 rounded-xl" />
                         </div>
                         <div className="sm:my-5">
                             <label for="max_budget" className="md:ml-10 text-graydust-normal">Max</label>
-                            <input type="text" id="max_budget" name="max_budget" placeholder="₹3000" className="ml-5 p-3 outline-none border text-graydust-medium w-44 h-16 rounded-xl" />
+                            <input type="number" id="max_budget" name="max_budget" placeholder="₹3000" className="ml-5 p-3 outline-none border text-graydust-medium w-44 h-16 rounded-xl" />
                         </div>
                     </div>
 

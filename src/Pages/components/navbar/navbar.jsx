@@ -13,6 +13,7 @@ const navbar = () => {
           <a class="text-sm mr-5 text-blacky-light hover:text-evergreen duration-500"><Link className="" to="/">Contact</Link></a>
         </nav>
         <div className="md:flex my-4">
+          <input type="text" className="w-20 bg-whiteglow outline-none text-blacky-dark text-sm border border-none duration-500 px-4 py-2 mx-4 rounded-md" placeholder="Search" />
          <button className="bg-whiteglow text-blacky-dark text-sm border border-none duration-500 px-4 py-2 mx-4 hover:bg-blacky-dark rounded-md hover:text-whiteglow">
             <Link className="" to="/login">Login</Link>
           </button>

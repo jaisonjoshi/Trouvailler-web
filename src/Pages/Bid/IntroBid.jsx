@@ -1,11 +1,13 @@
 import React from 'react'
 import FAQ from '../components/FAQ/FAQ'
+import Navbar from '../components/navbar/navbar'
 import Footer from '../components/Footer/Footer'
 import { Link } from "react-router-dom";
 
 const IntroBid = () => {
     return (
         <div>
+            <Navbar />
             {/* Header */}
             <div className="bg-green-slop bg-no-repeat w-full bg-cover text-left relative" >
                 <div className='sm:w-1/2 p-10'>
