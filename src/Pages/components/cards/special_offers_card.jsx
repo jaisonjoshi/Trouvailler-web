@@ -55,9 +55,9 @@ const OfferCard = () => {
       <div className="relative">
         <img src={require('../../Assets/SpecialOffer.png')} alt="" className=" rounded-md h-60 w-full object-cover" />
         <div className="absolute bg-graydust-light opacity-90 top-40 w-full flex rounded-lg h-16 p-2">
-          <div className="text-xs md:text-sm w-1/3"><h6 className="text-blacky-light">City</h6><p className="text-blacky-dark">Newton Abbot</p></div>
-          <div className="text-xs md:text-sm w-1/3 pl-3 border-l-2 border-graydust-normal"><h6 className="text-blacky-light">Dates</h6><p className="text-blacky-dark">16-07-22</p></div>
-          <div className="text-xs md:text-sm w-1/3 pl-3 border-l-2 border-graydust-normal"><h6 className="text-blacky-light">Price</h6><p className="text-blacky-dark">₹ 4000</p></div>
+          <div className="text-xs md:text-sm w-1/3"><h6 className="text-blacky-light">City</h6><p className="text-blacky-dark font-semibold">Newton Abbot</p></div>
+          <div className="text-xs md:text-sm w-1/3 pl-3 border-l-2 border-graydust-normal"><h6 className="text-blacky-light">Dates</h6><p className="text-blacky-dark font-semibold">16-07-22</p></div>
+          <div className="text-xs md:text-sm w-1/3 pl-3 border-l-2 border-graydust-normal"><h6 className="text-blacky-light">Price</h6><p className="text-blacky-dark font-semibold">₹ 4000</p></div>
         </div>
       </div>
 
