@@ -23,13 +23,13 @@ const Home = () => {
                 <div className="hidden h-auto w-96 shadow-lg shadow-graydust-medium rounded-lg px-7 py-3">
                     <input type="checkbox" className="ml-2 mb-5 accent-evergreen" id="honeymoon" name="" value="" />
                     <label for="honeymoon" className="text-base text-blacky-bright"> Honeymoon</label><br />
-                    <input type="checkbox"  className="ml-2 mb-5 accent-evergreen" id="family" name="" value="" />
+                    <input type="checkbox" className="ml-2 mb-5 accent-evergreen" id="family" name="" value="" />
                     <label for="family" className="text-base text-blacky-bright"> Family</label><br />
                     <input type="checkbox" className="ml-2 mb-5 accent-evergreen" id="friends" name="" value="" />
                     <label for="friends" className="text-base text-blacky-bright"> Friends</label><br />
                     <input type="checkbox" className="ml-2 mb-5 accent-evergreen" id="holiday" name="" value="" />
                     <label for="holiday" className="text-base text-blacky-bright"> Holiday</label><br />
-                    <input type="submit" className="ml-3 my-2 rounded-md border border-blacky-bright text-blacky-light w-20 h-8 hover:bg-evergreen hover:text-blacky-dark duration-500 hover:border-none" value="Apply"/>
+                    <input type="submit" className="ml-3 my-2 rounded-md border border-blacky-bright text-blacky-light w-20 h-8 hover:bg-evergreen hover:text-blacky-dark duration-500 hover:border-none" value="Apply" />
                 </div>
 
                 <div className="flex justify-center items-center m-3">
@@ -42,7 +42,7 @@ const Home = () => {
                 <div className="hidden h-auto w-96 shadow-lg shadow-graydust-medium rounded-lg px-7 py-3">
                     <input type="checkbox" className="ml-2 mb-5 accent-evergreen" id="budget1" name="" value="" />
                     <label for="budget1" className="text-base text-blacky-bright"> Less than 10,000</label><br />
-                    <input type="checkbox"  className="ml-2 mb-5 accent-evergreen" id="family" name="" value="" />
+                    <input type="checkbox" className="ml-2 mb-5 accent-evergreen" id="family" name="" value="" />
                     <label for="family" className="text-base text-blacky-bright"> 10,000 - 20,000</label><br />
                     <input type="checkbox" className="ml-2 mb-5 accent-evergreen" id="friends" name="" value="" />
                     <label for="friends" className="text-base text-blacky-bright"> 20,000 - 40,000</label><br />
@@ -58,7 +58,7 @@ const Home = () => {
                             <input type="number" id="max_budget" name="max_budget" placeholder="₹3000" className="ml-2 pl-3 outline-none border text-graydust-medium w-20 h-10 rounded-xl" />
                         </div>
                     </div>
-                    <input type="submit" className="align-middle ml-3 my-5 rounded-md border border-blacky-bright text-blacky-light w-20 h-8 hover:bg-evergreen hover:text-blacky-dark duration-500 hover:border-none" value="Apply"/>
+                    <input type="submit" className="align-middle ml-3 my-5 rounded-md border border-blacky-bright text-blacky-light w-20 h-8 hover:bg-evergreen hover:text-blacky-dark duration-500 hover:border-none" value="Apply" />
                 </div>
 
                 <div className="flex justify-center items-center m-3">
@@ -71,13 +71,13 @@ const Home = () => {
                 <div className="hidden h-auto w-96 shadow-lg shadow-graydust-medium rounded-lg px-7 py-3">
                     <input type="checkbox" className="ml-2 mb-5 accent-evergreen" id="adventure" name="" value="" />
                     <label for="adventure" className="text-base text-blacky-bright">Adventure</label><br />
-                    <input type="checkbox"  className="ml-2 mb-5 accent-evergreen" id="nature" name="" value="" />
+                    <input type="checkbox" className="ml-2 mb-5 accent-evergreen" id="nature" name="" value="" />
                     <label for="nature" className="text-base text-blacky-bright"> Nature</label><br />
                     <input type="checkbox" className="ml-2 mb-5 accent-evergreen" id="hill" name="" value="" />
                     <label for="hill" className="text-base text-blacky-bright"> Hill Station</label><br />
                     <input type="checkbox" className="ml-2 mb-5 accent-evergreen" id="religious" name="" value="" />
                     <label for="religious" className="text-base text-blacky-bright"> Religious</label><br />
-                    <input type="submit" className="ml-3 my-2 rounded-md border border-blacky-bright text-blacky-light w-20 h-8 hover:bg-evergreen hover:text-blacky-dark duration-500 hover:border-none" value="Apply"/>
+                    <input type="submit" className="ml-3 my-2 rounded-md border border-blacky-bright text-blacky-light w-20 h-8 hover:bg-evergreen hover:text-blacky-dark duration-500 hover:border-none" value="Apply" />
                 </div>
 
                 <div className="flex justify-center items-center m-3">
@@ -86,6 +86,17 @@ const Home = () => {
                         Rooms
                     </button>
                 </div>
+
+                <div className="hidden h-auto w-96 shadow-lg shadow-graydust-medium rounded-lg px-7 py-3">
+                    <input type="checkbox" className="ml-2 mb-5 accent-evergreen" id="single-room" name="" value="" />
+                    <label for="single-room" className="text-base text-blacky-bright"> Single room</label><br />
+                    <input type="checkbox" className="ml-2 mb-5 accent-evergreen" id="double-room" name="" value="" />
+                    <label for="double-room" className="text-base text-blacky-bright"> Double room</label><br />
+                    <input type="checkbox" className="ml-2 mb-5 accent-evergreen" id="dormitories" name="" value="" />
+                    <label for="dormitories" className="text-base text-blacky-bright"> Dormitories</label><br />
+                    <input type="submit" className="ml-3 my-2 rounded-md border border-blacky-bright text-blacky-light w-20 h-8 hover:bg-evergreen hover:text-blacky-dark duration-500 hover:border-none" value="Apply" />
+                </div>
+
             </div>
             <hr className="w-full my-5" />
             <div className="grid sm:grid-cols-2 md:grid-cols-3 gap-5 m-11">
