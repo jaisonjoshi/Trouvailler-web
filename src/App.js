@@ -15,6 +15,7 @@ import BidStatus from "./Pages/Bid/BidStatus.jsx";
 import Package from "./Pages/DetailViews/Package.jsx";
 import Hotel from "./Pages/DetailViews/Hotel.jsx"
 
+
 function App() {
   return (
     <BrowserRouter>

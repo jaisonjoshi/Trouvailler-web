@@ -3,7 +3,8 @@ import Navbar from '../components/navbar/navbar'
 import List1 from '../components/cards/list1'
 import List2 from '../components/cards/list2'
 import Footer from '../components/Footer/Footer'
-
+import Flowbite from "flowbite-react"
+import { Dropdown } from 'flowbite-react/lib/cjs/components/Dropdown';
 
 const Home = () => {
     return (
@@ -13,24 +14,33 @@ const Home = () => {
                 <div className="flex justify-center items-center m-3">
                     <input type="text" className="w-48 flex justify-center outline-none items-center text-blacky-light p-3 shadow-lg shadow-gray-500 rounded-2xl text-xs" placeholder="Search" />
                 </div>
-                <div className="flex justify-center items-center m-3">
-                    <button className="w-48 flex md:justify-center sm:justify-start items-center text-blacky-light p-3 shadow-lg shadow-gray-500 rounded-2xl text-xs">
-                        <img src={require('../Assets/Variant2.png')} alt="Facebook" className="h-3 w-3 mr-2" />
-                        Categories
-                    </button>
-                </div>
 
-                <div className="hidden h-auto w-96 shadow-lg shadow-graydust-medium rounded-lg px-7 py-3">
-                    <input type="checkbox" className="ml-2 mb-5 accent-evergreen" id="honeymoon" name="" value="" />
-                    <label for="honeymoon" className="text-base text-blacky-bright"> Honeymoon</label><br />
-                    <input type="checkbox" className="ml-2 mb-5 accent-evergreen" id="family" name="" value="" />
-                    <label for="family" className="text-base text-blacky-bright"> Family</label><br />
-                    <input type="checkbox" className="ml-2 mb-5 accent-evergreen" id="friends" name="" value="" />
-                    <label for="friends" className="text-base text-blacky-bright"> Friends</label><br />
-                    <input type="checkbox" className="ml-2 mb-5 accent-evergreen" id="holiday" name="" value="" />
-                    <label for="holiday" className="text-base text-blacky-bright"> Holiday</label><br />
+                {/*Drop down of categories */}
+
+                <Dropdown
+                    label="Categories"
+                    dismissOnClick={false}
+                    class="m-3 w-48 flex md:justify-center sm:justify-start items-center text-blacky-light  shadow-lg shadow-gray-500 rounded-2xl text-xs">
+                    <Dropdown.Item>
+                        <input type="checkbox" className=" accent-evergreen" id="honeymoon" name="" value="" />
+                        <label for="honeymoon" className="pl-3 text-base text-blacky-bright"> Honeymoon</label><br />
+                    </Dropdown.Item>
+                    <Dropdown.Item>
+                        <input type="checkbox" className="accent-evergreen" id="family" name="" value="" />
+                        <label for="family" className="pl-3 text-base text-blacky-bright"> Family</label><br />
+                    </Dropdown.Item>
+                    <Dropdown.Item>
+                        <input type="checkbox" className="accent-evergreen" id="friends" name="" value="" />
+                        <label for="friends" className="pl-3 text-base text-blacky-bright"> Friends</label><br />
+                    </Dropdown.Item>
+                    <Dropdown.Item>
+                        <input type="checkbox" className="accent-evergreen" id="holiday" name="" value="" />
+                        <label for="holiday" className="pl-3 text-base text-blacky-bright"> Holiday</label><br />
+                    </Dropdown.Item>
+                    <Dropdown.Item>
                     <input type="submit" className="ml-3 my-2 rounded-md border border-blacky-bright text-blacky-light w-20 h-8 hover:bg-evergreen hover:text-blacky-dark duration-500 hover:border-none" value="Apply" />
-                </div>
+                    </Dropdown.Item>
+                </Dropdown>
 
                 <div className="flex justify-center items-center m-3">
                     <button className="w-48 flex md:justify-center sm:justify-start items-center text-blacky-light p-3 shadow-lg shadow-gray-500 rounded-2xl text-xs">
