@@ -3,7 +3,7 @@ import { Link } from "react-router-dom";
 
 const list2_card = () => {
   return (
-    <Link to="/list/hotel">
+    <Link to="/list/hotel:id">
       <div className='overflow-hidden w-full relative'>
         <img className='h-60 sm:h-72 object-cover w-full rounded-lg' src={require('../../Assets/List.png')} alt="" />
         <div className='p-5'>
