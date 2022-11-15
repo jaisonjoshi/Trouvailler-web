@@ -26,8 +26,8 @@ function App() {
         <Route path="/list" element={<List/>}/>
         <Route path="/what-is-bid" element={<IntroToBid/>}/>
         <Route path="/bid-status" element={<BidStatus/>}/>
-        <Route path="/package" element={<Package/>}/>
-        <Route path="/hotel" element={<Hotel/>}/>
+        <Route path="/list/package" element={<Package/>}/>
+        <Route path="/list/hotel" element={<Hotel/>}/>
       </Routes>
     </BrowserRouter>
   );
