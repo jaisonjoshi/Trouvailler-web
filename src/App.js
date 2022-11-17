@@ -15,6 +15,7 @@ import BidStatus from "./Pages/Bid/BidStatus.jsx";
 import Package from "./Pages/DetailViews/Package.jsx";
 import Hotel from "./Pages/DetailViews/Hotel.jsx"
 
+
 function App() {
   return (
     <BrowserRouter>
@@ -26,8 +27,8 @@ function App() {
         <Route path="/list" element={<List/>}/>
         <Route path="/what-is-bid" element={<IntroToBid/>}/>
         <Route path="/bid-status" element={<BidStatus/>}/>
-        <Route path="/package" element={<Package/>}/>
-        <Route path="/hotel" element={<Hotel/>}/>
+        <Route path="/list/package:id" element={<Package/>}/>
+        <Route path="/list/hotel:id" element={<Hotel/>}/>
       </Routes>
     </BrowserRouter>
   );

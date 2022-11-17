@@ -3,6 +3,7 @@ import "slick-carousel/slick/slick.css";
 import "slick-carousel/slick/slick-theme.css";
 import Slider from "react-slick";
 import Footer from "../components/Footer/Footer"
+import Navbar from '../components/navbar/navbar'
 
 const Package = () => {
     var settings = {
@@ -15,6 +16,7 @@ const Package = () => {
 
     return (
         <div>
+            <Navbar></Navbar>
             {/* Header */}
             <div>
                 <div className='sm:flex'>

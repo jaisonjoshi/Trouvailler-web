@@ -5,6 +5,7 @@ import Slider from "react-slick";
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
 import { solid, regular, brands, icon } from '@fortawesome/fontawesome-svg-core/import.macro'
 import Footer from "../components/Footer/Footer"
+import Navbar from '../components/navbar/navbar'
 
 const Hotel = () => {
     var settings = {
@@ -17,6 +18,7 @@ const Hotel = () => {
 
     return (
         <div>
+            <Navbar></Navbar>
             {/* header */}
             <div className='sm:flex'>
                 <Slider className='sm:w-1/2' {...settings}>

@@ -3,7 +3,8 @@ import Navbar from '../components/navbar/navbar'
 import List1 from '../components/cards/list1'
 import List2 from '../components/cards/list2'
 import Footer from '../components/Footer/Footer'
-
+import Flowbite from "flowbite-react"
+import { Dropdown } from 'flowbite-react/lib/cjs/components/Dropdown';
 
 const Home = () => {
     return (
@@ -13,89 +14,120 @@ const Home = () => {
                 <div className="flex justify-center items-center m-3">
                     <input type="text" className="w-48 flex justify-center outline-none items-center text-blacky-light p-3 shadow-lg shadow-gray-500 rounded-2xl text-xs" placeholder="Search" />
                 </div>
-                <div className="flex justify-center items-center m-3">
-                    <button className="w-48 flex md:justify-center sm:justify-start items-center text-blacky-light p-3 shadow-lg shadow-gray-500 rounded-2xl text-xs">
-                        <img src={require('../Assets/Variant2.png')} alt="Facebook" className="h-3 w-3 mr-2" />
-                        Categories
-                    </button>
-                </div>
 
-                <div className="hidden h-auto w-96 shadow-lg shadow-graydust-medium rounded-lg px-7 py-3">
-                    <input type="checkbox" className="ml-2 mb-5 accent-evergreen" id="honeymoon" name="" value="" />
-                    <label for="honeymoon" className="text-base text-blacky-bright"> Honeymoon</label><br />
-                    <input type="checkbox" className="ml-2 mb-5 accent-evergreen" id="family" name="" value="" />
-                    <label for="family" className="text-base text-blacky-bright"> Family</label><br />
-                    <input type="checkbox" className="ml-2 mb-5 accent-evergreen" id="friends" name="" value="" />
-                    <label for="friends" className="text-base text-blacky-bright"> Friends</label><br />
-                    <input type="checkbox" className="ml-2 mb-5 accent-evergreen" id="holiday" name="" value="" />
-                    <label for="holiday" className="text-base text-blacky-bright"> Holiday</label><br />
-                    <input type="submit" className="ml-3 my-2 rounded-md border border-blacky-bright text-blacky-light w-20 h-8 hover:bg-evergreen hover:text-blacky-dark duration-500 hover:border-none" value="Apply" />
-                </div>
+                {/*Drop down of categories */}
 
-                <div className="flex justify-center items-center m-3">
-                    <button className="w-48 flex md:justify-center sm:justify-start items-center text-blacky-light p-3 shadow-lg shadow-gray-500 rounded-2xl text-xs">
-                        <img src={require('../Assets/Variant2.png')} alt="Facebook" className="h-3 w-3 mr-2" />
-                        Budget
-                    </button>
-                </div>
+                <Dropdown
+                    label="Categories"
+                    dismissOnClick={false}
+                    class="m-3 w-48 flex md:justify-center sm:justify-start items-center text-blacky-light  shadow-lg shadow-gray-500 rounded-2xl text-xs">
+                    <Dropdown.Item>
+                        <input type="checkbox" className=" accent-evergreen" id="honeymoon" name="" value="" />
+                        <label for="honeymoon" className="pl-3 text-base text-blacky-bright"> Honeymoon</label><br />
+                    </Dropdown.Item>
+                    <Dropdown.Item>
+                        <input type="checkbox" className="accent-evergreen" id="family" name="" value="" />
+                        <label for="family" className="pl-3 text-base text-blacky-bright"> Family</label><br />
+                    </Dropdown.Item>
+                    <Dropdown.Item>
+                        <input type="checkbox" className="accent-evergreen" id="friends" name="" value="" />
+                        <label for="friends" className="pl-3 text-base text-blacky-bright"> Friends</label><br />
+                    </Dropdown.Item>
+                    <Dropdown.Item>
+                        <input type="checkbox" className="accent-evergreen" id="holiday" name="" value="" />
+                        <label for="holiday" className="pl-3 text-base text-blacky-bright"> Holiday</label><br />
+                    </Dropdown.Item>
+                    <Dropdown.Item>
+                        <input type="submit" className="ml-3 my-2 rounded-md border border-blacky-bright text-blacky-light w-20 h-8 hover:bg-evergreen hover:text-blacky-dark duration-500 hover:border-none" value="Apply" />
+                    </Dropdown.Item>
+                </Dropdown>
 
-                <div className="hidden h-auto w-96 shadow-lg shadow-graydust-medium rounded-lg px-7 py-3">
-                    <input type="checkbox" className="ml-2 mb-5 accent-evergreen" id="budget1" name="" value="" />
-                    <label for="budget1" className="text-base text-blacky-bright"> Less than 10,000</label><br />
-                    <input type="checkbox" className="ml-2 mb-5 accent-evergreen" id="family" name="" value="" />
-                    <label for="family" className="text-base text-blacky-bright"> 10,000 - 20,000</label><br />
-                    <input type="checkbox" className="ml-2 mb-5 accent-evergreen" id="friends" name="" value="" />
-                    <label for="friends" className="text-base text-blacky-bright"> 20,000 - 40,000</label><br />
-                    <input type="checkbox" className="ml-2 mb-5 accent-evergreen" id="holiday" name="" value="" />
-                    <label for="holiday" className="text-base text-blacky-bright"> 40,000 - 50,000</label><br />
+                <Dropdown
+                    label="Budget"
+                    dismissOnClick={false}
+                    class="m-3 w-48 flex md:justify-center sm:justify-start items-center text-blacky-light  shadow-lg shadow-gray-500 rounded-2xl text-xs">
+                    <Dropdown.Item>
+                        <input type="checkbox" className="accent-evergreen" id="budget1" name="" value="" />
+                        <label for="budget1" className="pl-3 text-base text-blacky-bright"> Less than 10,000</label><br />
+                    </Dropdown.Item>
+                    <Dropdown.Item>
+                        <input type="checkbox" className="accent-evergreen" id="family" name="" value="" />
+                        <label for="family" className="pl-3 text-base text-blacky-bright"> 10,000 - 20,000</label><br />
+                    </Dropdown.Item>
+                    <Dropdown.Item>
+                        <input type="checkbox" className=" accent-evergreen" id="friends" name="" value="" />
+                        <label for="friends" className="pl-3 text-base text-blacky-bright"> 20,000 - 40,000</label><br />
+                    </Dropdown.Item>
+                    <Dropdown.Item>
+                        <input type="checkbox" className=" accent-evergreen" id="holiday" name="" value="" />
+                        <label for="holiday" className="pl-3 text-base text-blacky-bright"> 40,000 - 50,000</label><br />
+                    </Dropdown.Item>
+
                     <div className="flex">
                         <div className="flex items-center">
-                            <label for="min_budget" className="text-blacky-bright">Min</label>
-                            <input type="number" id="min_budget" name="min_budget" placeholder="₹1000" className="ml-2 pl-3 outline-none border text-graydust-medium w-20 h-10 rounded-xl" />
+                            <Dropdown.Item>
+                                <label for="min_budget" className="text-blacky-bright">Min</label>
+                                <input type="number" id="min_budget" name="min_budget" placeholder="₹1000" className="ml-2 pl-3 outline-none border text-graydust-medium w-24 h-10 rounded-xl" />
+                            </Dropdown.Item>
                         </div>
                         <div className="flex items-center">
-                            <label for="max_budget" className="ml-10 text-blacky-bright">Max</label>
-                            <input type="number" id="max_budget" name="max_budget" placeholder="₹3000" className="ml-2 pl-3 outline-none border text-graydust-medium w-20 h-10 rounded-xl" />
+                            <Dropdown.Item>
+                                <label for="max_budget" className="ml-6 text-blacky-bright">Max</label>
+                                <input type="number" id="max_budget" name="max_budget" placeholder="₹3000" className="ml-2 pl-3 outline-none border text-graydust-medium w-24 h-10 rounded-xl" />
+                            </Dropdown.Item>
                         </div>
                     </div>
-                    <input type="submit" className="align-middle ml-3 my-5 rounded-md border border-blacky-bright text-blacky-light w-20 h-8 hover:bg-evergreen hover:text-blacky-dark duration-500 hover:border-none" value="Apply" />
-                </div>
+                    <Dropdown.Item>
+                        <input type="submit" className="align-middle ml-3 my-5 rounded-md border border-blacky-bright text-blacky-light w-20 h-8 hover:bg-evergreen hover:text-blacky-dark duration-500 hover:border-none" value="Apply" />
+                    </Dropdown.Item>
+                </Dropdown>
 
-                <div className="flex justify-center items-center m-3">
-                    <button className="w-48 flex md:justify-center sm:justify-start items-center text-blacky-light p-3 shadow-lg shadow-gray-500 rounded-2xl text-xs">
-                        <img src={require('../Assets/Variant2.png')} alt="Facebook" className="h-3 w-3 mr-2" />
-                        Activities
-                    </button>
-                </div>
+                <Dropdown
+                    label="Activities"
+                    dismissOnClick={false}
+                    class="m-3 w-48 flex md:justify-center sm:justify-start items-center text-blacky-light  shadow-lg shadow-gray-500 rounded-2xl text-xs">
+                    <Dropdown.Item>
+                        <input type="checkbox" className=" accent-evergreen" id="adventure" name="" value="" />
+                        <label for="adventure" className="pl-3 text-base text-blacky-bright">Adventure</label><br />
+                    </Dropdown.Item>
+                    <Dropdown.Item>
+                        <input type="checkbox" className=" accent-evergreen" id="nature" name="" value="" />
+                        <label for="nature" className="pl-3 text-base text-blacky-bright"> Nature</label><br />
+                    </Dropdown.Item>
+                    <Dropdown.Item>
+                        <input type="checkbox" className=" accent-evergreen" id="hill" name="" value="" />
+                        <label for="hill" className="pl-3 text-base text-blacky-bright"> Hill Station</label><br />
+                    </Dropdown.Item>
+                    <Dropdown.Item>
+                        <input type="checkbox" className=" accent-evergreen" id="religious" name="" value="" />
+                        <label for="religious" className="pl-3 text-base text-blacky-bright"> Religious</label><br />
+                    </Dropdown.Item>
+                    <Dropdown.Item>
+                        <input type="submit" className=" rounded-md border border-blacky-bright text-blacky-light w-20 h-8 hover:bg-evergreen hover:text-blacky-dark duration-500 hover:border-none" value="Apply" />
+                    </Dropdown.Item>
+                </Dropdown>
 
-                <div className="hidden h-auto w-96 shadow-lg shadow-graydust-medium rounded-lg px-7 py-3">
-                    <input type="checkbox" className="ml-2 mb-5 accent-evergreen" id="adventure" name="" value="" />
-                    <label for="adventure" className="text-base text-blacky-bright">Adventure</label><br />
-                    <input type="checkbox" className="ml-2 mb-5 accent-evergreen" id="nature" name="" value="" />
-                    <label for="nature" className="text-base text-blacky-bright"> Nature</label><br />
-                    <input type="checkbox" className="ml-2 mb-5 accent-evergreen" id="hill" name="" value="" />
-                    <label for="hill" className="text-base text-blacky-bright"> Hill Station</label><br />
-                    <input type="checkbox" className="ml-2 mb-5 accent-evergreen" id="religious" name="" value="" />
-                    <label for="religious" className="text-base text-blacky-bright"> Religious</label><br />
-                    <input type="submit" className="ml-3 my-2 rounded-md border border-blacky-bright text-blacky-light w-20 h-8 hover:bg-evergreen hover:text-blacky-dark duration-500 hover:border-none" value="Apply" />
-                </div>
 
-                <div className="flex justify-center items-center m-3">
-                    <button className="w-48 flex md:justify-center sm:justify-start items-center text-blacky-light p-3 shadow-lg shadow-gray-500 rounded-2xl text-xs">
-                        <img src={require('../Assets/Variant2.png')} alt="Facebook" className="h-3 w-3 mr-2" />
-                        Rooms
-                    </button>
-                </div>
-
-                <div className="hidden h-auto w-96 shadow-lg shadow-graydust-medium rounded-lg px-7 py-3">
-                    <input type="checkbox" className="ml-2 mb-5 accent-evergreen" id="single-room" name="" value="" />
-                    <label for="single-room" className="text-base text-blacky-bright"> Single room</label><br />
-                    <input type="checkbox" className="ml-2 mb-5 accent-evergreen" id="double-room" name="" value="" />
-                    <label for="double-room" className="text-base text-blacky-bright"> Double room</label><br />
-                    <input type="checkbox" className="ml-2 mb-5 accent-evergreen" id="dormitories" name="" value="" />
-                    <label for="dormitories" className="text-base text-blacky-bright"> Dormitories</label><br />
-                    <input type="submit" className="ml-3 my-2 rounded-md border border-blacky-bright text-blacky-light w-20 h-8 hover:bg-evergreen hover:text-blacky-dark duration-500 hover:border-none" value="Apply" />
-                </div>
+                <Dropdown
+                    label="Rooms"
+                    dismissOnClick={false}
+                    class="m-3 w-48 flex md:justify-center sm:justify-start items-center text-blacky-light  shadow-lg shadow-gray-500 rounded-2xl text-xs">
+                    <Dropdown.Item>
+                        <input type="checkbox" className=" accent-evergreen" id="single-room" name="" value="" />
+                        <label for="single-room" className="pl-3 text-base text-blacky-bright"> Single room</label><br />
+                    </Dropdown.Item>
+                    <Dropdown.Item>
+                        <input type="checkbox" className=" accent-evergreen" id="double-room" name="" value="" />
+                        <label for="double-room" className="pl-3 text-base text-blacky-bright"> Double room</label><br />
+                    </Dropdown.Item>
+                    <Dropdown.Item>
+                        <input type="checkbox" className=" accent-evergreen" id="dormitories" name="" value="" />
+                        <label for="dormitories" className="pl-3 text-base text-blacky-bright"> Dormitories</label><br />
+                    </Dropdown.Item>
+                    <Dropdown.Item>
+                        <input type="submit" className="rounded-md border border-blacky-bright text-blacky-light w-20 h-8 hover:bg-evergreen hover:text-blacky-dark duration-500 hover:border-none" value="Apply" />
+                    </Dropdown.Item>
+                </Dropdown>
 
             </div>
             <hr className="w-full my-5" />
