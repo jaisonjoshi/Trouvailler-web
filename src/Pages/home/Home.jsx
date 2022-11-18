@@ -7,12 +7,11 @@ import ReviewMob from '../Reviews/ReviewsMob'
 import Footer from '../components/Footer/Footer'
 import { Link } from "react-router-dom";
 
-
 const Home = () => {
   return (
     <div className="">
       <div className="bg-hero-image bg-cover w-full h-screen">
-        <Navbar />
+        <Navbar></Navbar>
         <div className="px-10 py-8 flex-row mid:w-4/6">
           <h1 className="text-5xl text-whiteglow font-bold md:pt-36">
             THE BEST TOURS IN JUST 3 CLICKS
@@ -69,7 +68,9 @@ const Home = () => {
       </div>
 
       <div>
+
         {/* Trending destinations block */}
+
         <div>
           <div className='text-center'>
             <h1 className='font-bold text-2xl'>Trending Destinations</h1>
@@ -90,8 +91,8 @@ const Home = () => {
 
       </div >
 
-
       {/* Reviews block */}
+
       <div className='bg-graydust-light'>
         <h1 className='font-bold text-2xl text-center pt-7'>Reviews</h1>
         <div className='hidden sm:block px-20'><Review /></div>
@@ -100,6 +101,7 @@ const Home = () => {
       </div>
 
       {/* Footer block */}
+      
       <Footer />
     </div>
   )
