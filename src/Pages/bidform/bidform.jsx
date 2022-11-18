@@ -13,8 +13,8 @@ const Bidform = () => {
                 <div className="m-10">
                     <div className="flex mid:mx-10 border text-graydust-medium rounded-lg w-72 md:w-1/2 h-16">
                         <img src={require('../Assets/Location.png')} alt="" className="h-5 w-5 my-auto mx-4" />
-                        <select name="location" id="location" className="outline-none text-gray text-graydust-medium">
-                            <option value="" className="outline-none text-center">Where are you going?</option>
+                        <select name="location" id="location" className="border-none outline-none text-gray text-graydust-medium">
+                            <option value="" className="outline-none  text-center">Where are you going?</option>
                             <option value="" className="outline-none text-center">Palakkad</option>
                             <option value="" className="outline-none text-center">Wayanad</option>
                             <option value="" className="outline-none text-center">Idukki</option>

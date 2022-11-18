@@ -39,8 +39,8 @@ const Hotel = () => {
             </div>
 
             {/* options */}
-            <div className='mt-10 px-5'>
-                <div className='flex flex-wrap'>
+            <div className='mt-10 px-5 ' >
+                <div className='flex flex-wrap sm:mx-32 '>
                     {/* Repeating block */}
                     <div className='text-graydust-medium mr-2 p-2 text-center border border-graydust-medium rounded'>
                         <h2><span><FontAwesomeIcon className='' icon={solid('fan')} /></span> Air Conditioning</h2>
@@ -56,7 +56,7 @@ const Hotel = () => {
                 </div>
 
                 {/* details */}
-                <div className='p-10'>
+                <div className='p-10 sm:mx-32'>
                     <p>There are many variations of passages of Lorem Ipsum available, but the majority have suffered alteration in some form, by injected humour, or randomised words which don't look even slightly believable. If you are going to use a passage of Lorem Ipsum</p>
                     <p>Guests at the hotel can enjoy a continental or a à la carte breakfast.</p>
                     <p>Lotus Temple is 1.9 km from FabHotel BMK Grand, while Tughlaqabad Fort is 5 km away. The nearest airport is Delhi International Airport, 14.5 km from the accommodation.</p>
