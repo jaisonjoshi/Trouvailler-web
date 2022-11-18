@@ -13,7 +13,8 @@ import List from "./Pages/list/list.jsx";
 import IntroToBid from "./Pages/Bid/IntroBid.jsx";
 import BidStatus from "./Pages/Bid/BidStatus.jsx";
 import Package from "./Pages/DetailViews/Package.jsx";
-import Hotel from "./Pages/DetailViews/Hotel.jsx"
+import Hotel from "./Pages/DetailViews/Hotel.jsx";
+
 
 
 function App() {
@@ -29,6 +30,7 @@ function App() {
         <Route path="/bid-status" element={<BidStatus/>}/>
         <Route path="/list/package:id" element={<Package/>}/>
         <Route path="/list/hotel:id" element={<Hotel/>}/>
+        
       </Routes>
     </BrowserRouter>
   );

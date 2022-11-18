@@ -1,6 +1,9 @@
 import React from 'react'
 import Navbar from '../components/navbar/navbar'
 import Footer from '../components/Footer/Footer'
+import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
+import { solid, regular, brands, icon } from '@fortawesome/fontawesome-svg-core/import.macro'
+
 const Bidform = () => {
     return (
         <div className="">
@@ -12,13 +15,13 @@ const Bidform = () => {
             <form action="" className="" method="post">
                 <div className="m-10">
                     <div className="flex mid:mx-10 border text-graydust-medium rounded-lg w-72 md:w-1/2 h-16">
-                        <img src={require('../Assets/Location.png')} alt="" className="h-5 w-5 my-auto mx-4" />
-                        <select name="location" id="location" className="outline-none text-gray text-graydust-medium">
-                            <option value="" className="outline-none text-center">Where are you going?</option>
-                            <option value="" className="outline-none text-center">Palakkad</option>
-                            <option value="" className="outline-none text-center">Wayanad</option>
-                            <option value="" className="outline-none text-center">Idukki</option>
-                            <option value="" className="outline-none text-center">Munnar</option>
+                    {/* <FontAwesomeIcon icon={solid('location-dot')} /> */}
+                    <select name="location" id="location" className="!important outline-none text-gray text-graydust-medium">
+                            <option value="" className="!outline-none text-center">Where are you going?</option>
+                            <option value="" className="!outline-none text-center">Palakkad</option>
+                            <option value="" className="!outline-none text-center">Wayanad</option>
+                            <option value="" className="!outline-none text-center">Idukki</option>
+                            <option value="" className="!outline-none text-center">Munnar</option>
                         </select>
                     </div>
                     <div className="md:flex my-7">
