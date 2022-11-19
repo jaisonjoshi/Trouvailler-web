@@ -26,8 +26,8 @@ const Login = () => {
                 <p className="text-center text-blacky-light text-sm m-2">- OR -</p>
 
                 <div className="flex flex-col">
-                    <input type="email" className="mx-14 p-3 outline-none border border-transparent border-b-blacky-medium hover:border-b-evergreen duration-500" placeholder="E-mail" required />
-                    <input type="password" className="mx-14 p-3 outline-none border border-transparent border-b-blacky-medium hover:border-b-evergreen duration-500" placeholder="Create Password" required />
+                    <input type="email" className="mx-14 p-3 outline-none border border-t-transparent border-l-transparent border-r-transparent focus:ring-0 focus:ring-offset-0 border-b-blacky-medium hover:border-b-evergreen duration-500" placeholder="E-mail" required />
+                    <input type="password" className="mx-14 p-3 outline-none border border-t-transparent border-l-transparent border-r-transparent focus:ring-0 focus:ring-offset-0 border-b-blacky-medium hover:border-b-evergreen duration-500" placeholder="Create Password" required />
                 </div>
 
                 <div className="mx-14 my-5">
