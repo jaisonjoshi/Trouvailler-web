@@ -1,6 +1,9 @@
 import React from 'react'
 import Navbar from '../components/navbar/navbar'
 import Footer from '../components/Footer/Footer'
+import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
+import { solid, regular, brands, icon } from '@fortawesome/fontawesome-svg-core/import.macro'
+
 const Bidform = () => {
     return (
         <div className="">

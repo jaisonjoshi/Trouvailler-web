@@ -6,6 +6,7 @@ import Review from '../Reviews/Review'
 import ReviewMob from '../Reviews/ReviewsMob'
 import Footer from '../components/Footer/Footer'
 import { Link } from "react-router-dom";
+import Timer from '../components/timer/timer'
 
 const Home = () => {
   return (
@@ -33,15 +34,15 @@ const Home = () => {
       <div className='md:flex bg-blacky-light sm:pl-20 w-full h-1/6'>
         <div className='w-full md:w-2/3'>
           <div className="p-10 flex">
-            <div className="z-10">
+            <div className="">
               <img className='w-20 h-20' src={require('../Assets/clock.png')}></img>
             </div>
-            <div className="z-20 w-52 bg-whiteglow text-blacky-dark flex justify-center items-center text-xl font-bold border border-none rounded-full">
-              <p className="">Ends in 00:00:00</p>
+            <div className="w-48 h-16 mt-2 bg-whiteglow text-blacky-dark flex justify-center items-center text-xl font-bold border border-none rounded-full">
+              <span className="flex text-xl">Ends in&nbsp;<Timer /></span>
             </div>
           </div>
 
-          <h1 className='font-bold text-4xl text-evergreen px-20 py-5'>
+          <h1 className='font-bold text-4xl text-evergreen px-20 py-2'>
             Bid for today
           </h1>
           <p className="text-justify text-whiteglow px-20 py-3">Wish you could bid hotel prices for your budget and make your trip more pocket friendly? Here's an end to your worries because we let you place your bid for today's lowest hotel prices. </p>
