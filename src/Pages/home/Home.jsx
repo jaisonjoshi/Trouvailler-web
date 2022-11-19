@@ -8,13 +8,12 @@ import Footer from '../components/Footer/Footer'
 import { Link } from "react-router-dom";
 import Timer from '../components/timer/timer'
 
-
 const Home = () => {
   return (
     <div className="">
       <div className="bg-hero-image bg-cover w-full h-screen">
-        <Navbar />
-        <div className="px-10 py-8 flex-row mid:w-4/6">
+        <Navbar></Navbar>
+        <div className="px-10 py-8 flex-row md:w-1/2 sm:ml-20 mid:w-4/6 ">
           <h1 className="text-5xl text-whiteglow font-bold md:pt-36">
             THE BEST TOURS IN JUST 3 CLICKS
           </h1>
@@ -32,7 +31,7 @@ const Home = () => {
 
       {/* Bid section */}
 
-      <div className='md:flex bg-blacky-light w-full h-1/6'>
+      <div className='md:flex bg-blacky-light sm:pl-20 w-full h-1/6'>
         <div className='w-full md:w-2/3'>
           <div className="p-10 flex">
             <div className="">
@@ -65,19 +64,21 @@ const Home = () => {
 
       </div>
 
-      <div className="mx-11">
+      <div className="mx-28">
         <Offers />
       </div>
 
       <div>
+
         {/* Trending destinations block */}
+
         <div>
           <div className='text-center'>
             <h1 className='font-bold text-2xl'>Trending Destinations</h1>
             <p>Have a plan to go vacation? See trending destinations for your inspiration where to go.</p>
           </div>
         </div>
-        <div className='grid  sm:grid-cols-2 md:grid-cols-3 gap-10 m-11'>
+        <div className='grid md:mx-32 sm:grid-cols-2 md:grid-cols-3 gap-10 m-11'>
           <DestCard />
           <DestCard />
           <DestCard />
@@ -88,11 +89,10 @@ const Home = () => {
         <div className='p-7 text-center'>
           <button className='font-medium border-graydust-dark border p-2 rounded-md w-full sm:w-auto px-10 hover:bg-evergreen hover:text-whiteglow hover:border-transparent hover:transition-colors hover:duration-200' >More destinations</button>
         </div>
-
       </div >
 
-
       {/* Reviews block */}
+
       <div className='bg-graydust-light'>
         <h1 className='font-bold text-2xl text-center pt-7'>Reviews</h1>
         <div className='hidden sm:block px-20'><Review /></div>
@@ -101,6 +101,7 @@ const Home = () => {
       </div>
 
       {/* Footer block */}
+
       <Footer />
     </div>
   )

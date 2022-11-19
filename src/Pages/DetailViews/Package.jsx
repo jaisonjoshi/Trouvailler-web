@@ -21,9 +21,9 @@ const Package = () => {
             <div>
                 <div className='sm:flex'>
                     <Slider className='sm:w-1/2' {...settings}>
-                        <img className='h-72 object-cover' src={require('../Assets/Rectangle 77.png')} alt="Car in road" />
-                        <img className='h-72 object-cover' src={require('../Assets/Rectangle 77.png')} alt="Car in road" />
-                        <img className='h-72 object-cover' src={require('../Assets/Rectangle 77.png')} alt="Car in road" />
+                        <img className='h-auto object-cover' src={require('../Assets/Rectangle 77.png')} alt="Car in road" />
+                        <img className='h-auto object-cover' src={require('../Assets/Rectangle 77.png')} alt="Car in road" />
+                        <img className='h-auto object-cover' src={require('../Assets/Rectangle 77.png')} alt="Car in road" />
                     </Slider>
                     <div className='p-5 sm:w-1/2'>
                         <h1 className='text-2xl font-bold pb-5'>Neque porro quisquam est</h1>
@@ -34,8 +34,10 @@ const Package = () => {
                     </div>
                 </div>
 
-                <div className='sm:flex mb-10 '>
+                <div className='sm:flex mb-10 sm:mx-32 lg:mx-52'>
+
                     {/* Itinerary section*/}
+
                     <div className='p-5 sm:w-3/4 shadow-lg shadow-graydust-normal m-3 rounded'>
                         <div className='text-xl my-5 font-bold border-b w-20 border-graydust-normal'><h1>Itinerary</h1></div>
                         {/* Repeating day details */}
@@ -61,8 +63,10 @@ const Package = () => {
                             </div>
                         </div>
                     </div>
+
                     {/* Related results */}
-                    <div className='sm:w-1/4 p-5 shadow-lg shadow-graydust-normal m-3 rounded'>
+
+                    <div className='sm:w-1/4 p-5 shadow-lg shadow-graydust-normal m-3 rounded '>
                         <div className='text-xl my-5 font-bold border-b w-36 border-graydust-normal'><h1>Related results</h1></div>
                     </div>
                 </div>

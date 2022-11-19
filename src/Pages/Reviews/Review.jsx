@@ -23,17 +23,20 @@ const Reviews = () => {
 
 const ReviewsCard = () => {
     return (
-        <div className='p-10'>
-            <div className='flex justify-center'>
-                <div className='w-2/5 h-2/5 rounded-full'>
-                    <img className='w-full object-cover' src={require('../Assets/avatar.png')} alt="Avatar" />
+        <div>
+
+            <div className='p-10'>
+                <div className='flex justify-center'>
+                    <div className='w-2/5 h-2/5 rounded-full'>
+                        <img className='w-full object-cover' src={require('../Assets/avatar.png')} alt="Avatar" />
+                    </div>
                 </div>
-            </div>
-            <p className='text-justify pt-10'>
-                I quickly found the right tour for me, but I had a few questions about the hotel, I wrote to tech support and they answered all my questions within an hour. The vacation itself was perfect. Thank you very much. I will come back again and again.
-            </p>
-            <div className='pt-5'>
-                <span className='font-medium'>Jannike Borg,</span><span> Publisher</span>
+                <p className='text-justify pt-10'>
+                    I quickly found the right tour for me, but I had a few questions about the hotel, I wrote to tech support and they answered all my questions within an hour. The vacation itself was perfect. Thank you very much. I will come back again and again.
+                </p>
+                <div className='pt-5'>
+                    <span className='font-medium'>Jannike Borg,</span><span> Publisher</span>
+                </div>
             </div>
         </div>
     )
