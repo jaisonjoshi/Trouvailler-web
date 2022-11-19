@@ -10,9 +10,9 @@ const Home = () => {
     return (
         <div className="">
             <Navbar />
-            <div className="md:flex justify-center">
-                <div className="flex justify-center items-center m-3">
-                    <input type="text" className="w-48 flex justify-center outline-none items-center text-blacky-light p-3 shadow-lg shadow-gray-500 rounded-2xl text-xs" placeholder="Search" />
+            <div className="md:flex justify-center items-center">
+                <div className="flex">
+                    <input type="text" className="m-3 w-48 flex md:justify-center sm:justify-start items-center text-blacky-light border border-none focus:ring-0 focus:ring-offset-0 focus:border-graydust-medium outline-none shadow-lg shadow-gray-500 rounded-2xl text-xs" placeholder="Search" />
                 </div>
 
                 {/*Drop down of categories */}
