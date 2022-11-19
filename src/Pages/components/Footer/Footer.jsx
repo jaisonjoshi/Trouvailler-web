@@ -19,7 +19,7 @@ const Footer = () => {
               <h3 className='text-lg'>Subscribe to Newsletter</h3>
               <h5 className='text-sm pb-3'>Your email</h5>
               <div className='flex overflow-hidden h-11 rounded-lg w-full'>
-                <div><input type="text" className='h-full text-blacky-dark p-3 focus:outline-evergreen' /></div>
+                <div><input type="text" className='h-full text-blacky-dark p-3 border border-none focus:ring-0 focus:ring-offset-0 outline-none focus:outline-evergreen' /></div>
                 <button className='bg-evergreen h-auto'><FontAwesomeIcon className='px-4' icon={faPaperPlane} /></button>
               </div>
             </div>
