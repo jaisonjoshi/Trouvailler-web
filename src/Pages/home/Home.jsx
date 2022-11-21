@@ -1,23 +1,52 @@
 import React from 'react'
 import DestCard from '../components/cards/trending_dest_card'
-import Navbar from '../components/navbar/navbar'
 import Offers from '../components/cards/special_offers_card'
 import Review from '../Reviews/Review'
 import ReviewMob from '../Reviews/ReviewsMob'
 import Footer from '../components/Footer/Footer'
 import { Link } from "react-router-dom";
 import Timer from '../components/timer/timer'
+import NavbarTest from '../components/navbar/navbar'
+import Slider from "react-slick";
+import cImg1 from '../Assets/homeCarousel/pic1.jpg'
+import cImg2 from '../Assets/homeCarousel/pic2.jpg'
+import cImg3 from '../Assets/homeCarousel/pic3.jpg'
+import cImg4 from '../Assets/homeCarousel/pic4.jpg'
+import cImg5 from '../Assets/homeCarousel/pic5.jpg'
+import "../../../node_modules/slick-carousel/slick/slick.css"; 
+import "../../../node_modules/slick-carousel/slick/slick-theme.css"; 
+
 
 const Home = () => {
+  const carouselImgs = [cImg1, cImg2, cImg3, cImg4, cImg5]
+  const settings = {
+    className: "z-0",
+    infinite: true,
+   
+    slidesToShow: 1,
+    slidesToScroll: 1,
+    arrows:false,
+    autoplay:true,
+    autoplaySpeed: 4000,
+    
+  };
   return (
     <div className="">
-      <div className="bg-hero-image bg-cover w-full h-screen">
-        <Navbar></Navbar>
-        <div className="px-10 py-8 flex-row md:w-1/2 sm:ml-20 mid:w-4/6 ">
-          <h1 className="text-5xl text-whiteglow font-bold md:pt-36">
+      <div className=" w-full h-screen">
+           <NavbarTest/>
+             <Slider {...settings}>
+                {carouselImgs.map((img)=> (
+            <img src={img} className="w-screen h-screen" alt="img"></img>
+          ))}
+          
+
+        </Slider>
+        <div className=" absolute top-0 h-[100vh] flex items-center pl-40">
+          <div>
+          <h1 className="text-5xl text-whiteglow font-bold ">
             THE BEST TOURS IN JUST 3 CLICKS
           </h1>
-          <p className="text-sm text-whiteglow py-5">
+          <p className="text-md text-whiteglow py-5">
             Enter a country, a city or even just a landmark and we'll find the right tours for you
           </p>
 
@@ -25,6 +54,7 @@ const Home = () => {
             <Link className="" to="/list">Explore</Link>
             <img src={require('../Assets/Arrow.png')} alt="" className="h-3 w-3 mx-4 my-2" />
           </button>
+          </div>
 
         </div>
       </div>
@@ -59,12 +89,12 @@ const Home = () => {
 
       {/* special offers block */}
 
-      <div className="mt-5">
-        <h1 className='text-center font-bold text-blacky-dark text-2xl'>Special Offers</h1>
-
+      <div className="mt-20 mb-12">
+        <h1 className='text-center mx-28 font-bold text-blacky-dark text-4xl'>Special Offers</h1>
+                  <p className='text-center py-4'>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Labore iure odit nemo. Deleniti aut blanditiis sit adipisci nisi dolorem animi, quibusdam tenetur obcaecati in quaerat reiciendis, quidem vitae velit voluptates.</p>
       </div>
 
-      <div className="mx-3 md:mx-28">
+      <div className="mx-3 md:mx-28 offer-container">
         <Offers />
       </div>
 
@@ -72,10 +102,10 @@ const Home = () => {
 
         {/* Trending destinations block */}
 
-        <div>
+        <div className='pt-28 pb-8'>
           <div className='text-center'>
-            <h1 className='font-bold text-2xl'>Trending Destinations</h1>
-            <p>Have a plan to go vacation? See trending destinations for your inspiration where to go.</p>
+            <h1 className='font-bold text-4xl'>Trending Destinations</h1>
+            <p className='text-lg pt-4'>Have a plan to go vacation? See trending destinations for your inspiration where to go.</p>
           </div>
         </div>
         <div className='grid md:mx-32 sm:grid-cols-2 md:grid-cols-3 gap-10 m-11'>
@@ -86,15 +116,15 @@ const Home = () => {
           <DestCard />
           <DestCard />
         </div>
-        <div className='p-7 text-center'>
-          <button className='text-blacky-dark font-medium border-graydust-dark border p-2 rounded-md w-full sm:w-auto px-10 hover:bg-evergreen hover:text-blacky-dark hover:border-transparent hover:transition-colors hover:duration-200' >More destinations</button>
+        <div className='p-7 text-center mb-12'>
+          <button className='font-medium border-graydust-dark border p-2 rounded-md w-full sm:w-auto px-10 hover:bg-evergreen hover:text-whiteglow hover:border-transparent hover:transition-colors hover:duration-200' >More destinations</button>
         </div>
       </div >
 
       {/* Reviews block */}
 
       <div className='bg-graydust-light'>
-        <h1 className='font-bold text-2xl text-center pt-7'>Reviews</h1>
+        <h1 className='font-bold text-4xl text-center pt-7 mb-8'>Reviews</h1>
         <div className='hidden sm:block px-20'><Review /></div>
         <div className='sm:hidden'><ReviewMob /></div>
         <div className='text-center py-10 px-7'><button className='bg-blacky-dark text-whiteglow font-semibold p-2 px-10 rounded-md w-full sm:w-auto hover:bg-evergreen hover:text-blacky-dark hover:transition-colors hover:duration-200'>More reviews</button></div>

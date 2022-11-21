@@ -40,8 +40,8 @@ const Footer = () => {
         </div>
 
         <div className='border-t-2 border-graydust-medium flex justify-between align-middle  p-6  mx-4 sm:mx-10'>
-          <a href="" className='w-4/12 sm:w-2/12'>
-            <img src={Logo} alt="Trouvailler" />
+          <a href="" className='w-4/12 sm:w-1/12'>
+            <img src={Logo} alt="Trouvailler" className='w-3/4'/>
           </a>
           <div className='flex justify-evenly'>
             <a href="">
