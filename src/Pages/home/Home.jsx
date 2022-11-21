@@ -87,7 +87,7 @@ const Home = () => {
           <DestCard />
         </div>
         <div className='p-7 text-center'>
-          <button className='font-medium border-graydust-dark border p-2 rounded-md w-full sm:w-auto px-10 hover:bg-evergreen hover:text-whiteglow hover:border-transparent hover:transition-colors hover:duration-200' >More destinations</button>
+          <button className='text-blacky-dark font-medium border-graydust-dark border p-2 rounded-md w-full sm:w-auto px-10 hover:bg-evergreen hover:text-blacky-dark hover:border-transparent hover:transition-colors hover:duration-200' >More destinations</button>
         </div>
       </div >
 
