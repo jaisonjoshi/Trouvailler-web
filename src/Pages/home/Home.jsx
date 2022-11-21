@@ -64,7 +64,7 @@ const Home = () => {
 
       </div>
 
-      <div className="mx-28">
+      <div className="mx-3 md:mx-28">
         <Offers />
       </div>
 
