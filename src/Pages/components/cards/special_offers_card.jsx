@@ -71,9 +71,9 @@ const OfferCard = () => {
       {/*Buttons*/}
       <div className='flex justify-between gap-2 mb-4 '>
 
-        <button className='my-2 border border-evergreen rounded w-48 h-8 bg-whiteglow text-evergreen font-medium text-sm hover:bg-blacky-dark hover:text-whiteglow duration-500 hover:border-transparent'>Read More</button>
+        <button className='my-2 border border-blacky-dark rounded w-48 h-8 bg-whiteglow text-blacky-dark font-medium text-sm hover:bg-blacky-dark hover:text-whiteglow duration-500 hover:border-transparent'>Read More</button>
 
-        <button className='my-2 border border-evergreen rounded w-48 h-8 bg-evergreen text-whiteglow font-medium text-sm  hover:bg-blacky-dark hover:text-whiteglow duration-500 hover:border-transparent'>Book now</button>
+        <button className='my-2 border border-evergreen rounded w-48 h-8 bg-evergreen text-blacky-dark font-medium text-sm  hover:bg-blacky-dark hover:text-whiteglow duration-500 hover:border-transparent'>Book now</button>
 
       </div>
     </div>
