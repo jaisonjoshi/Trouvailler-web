@@ -1,20 +1,49 @@
 import React from 'react'
 import DestCard from '../components/cards/trending_dest_card'
-import Navbar from '../components/navbar/navbar'
 import Offers from '../components/cards/special_offers_card'
 import Review from '../Reviews/Review'
 import ReviewMob from '../Reviews/ReviewsMob'
 import Footer from '../components/Footer/Footer'
 import { Link } from "react-router-dom";
 import Timer from '../components/timer/timer'
+import NavbarTest from '../components/navbar/navbar'
+import Slider from "react-slick";
+import cImg1 from '../Assets/homeCarousel/pic1.jpg'
+import cImg2 from '../Assets/homeCarousel/pic2.jpg'
+import cImg3 from '../Assets/homeCarousel/pic3.jpg'
+import cImg4 from '../Assets/homeCarousel/pic4.jpg'
+import cImg5 from '../Assets/homeCarousel/pic5.jpg'
+import "../../../node_modules/slick-carousel/slick/slick.css"; 
+import "../../../node_modules/slick-carousel/slick/slick-theme.css"; 
+
 
 const Home = () => {
+  const carouselImgs = [cImg1, cImg2, cImg3, cImg4, cImg5]
+  const settings = {
+    className: "z-0",
+    infinite: true,
+   
+    slidesToShow: 1,
+    slidesToScroll: 1,
+    arrows:false,
+    autoplay:true,
+    autoplaySpeed: 4000,
+    
+  };
   return (
     <div className="">
-      <div className="bg-hero-image bg-cover w-full h-screen">
-        <Navbar></Navbar>
-        <div className="px-10 py-8 flex-row md:w-1/2 sm:ml-20 mid:w-4/6 ">
-          <h1 className="text-5xl text-whiteglow font-bold md:pt-36">
+      <div className=" w-full h-screen">
+           <NavbarTest/>
+             <Slider {...settings}>
+                {carouselImgs.map((img)=> (
+            <img src={img} className="w-screen h-screen" alt="img"></img>
+          ))}
+          
+
+        </Slider>
+        <div className=" absolute top-0 h-[100vh] flex items-center pl-40">
+          <div>
+          <h1 className="text-5xl text-whiteglow font-bold ">
             THE BEST TOURS IN JUST 3 CLICKS
           </h1>
           <p className="text-sm text-whiteglow py-5">
@@ -25,6 +54,7 @@ const Home = () => {
             <Link className="" to="/list">Explore</Link>
             <img src={require('../Assets/Arrow.png')} alt="" className="h-3 w-3 mx-4 my-2" />
           </button>
+          </div>
 
         </div>
       </div>
