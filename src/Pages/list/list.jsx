@@ -131,7 +131,7 @@ const Home = () => {
 
             </div>
             <hr className="w-full my-5" />
-            <div className="grid sm:grid-cols-2 md:grid-cols-3 gap-5 m-11">
+            <div className="lg:mx-28 grid sm:grid-cols-2 md:grid-cols-3 gap-5 m-11">
                 <List1 />
                 <List2 />
                 <List1 />
