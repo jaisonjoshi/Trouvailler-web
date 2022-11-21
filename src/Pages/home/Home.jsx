@@ -46,7 +46,7 @@ const Home = () => {
           <h1 className="text-5xl text-whiteglow font-bold ">
             THE BEST TOURS IN JUST 3 CLICKS
           </h1>
-          <p className="sm:text-md text-whiteglow py-5">
+          <p className="text-md text-whiteglow py-5">
             Enter a country, a city or even just a landmark and we'll find the right tours for you
           </p>
 
@@ -94,7 +94,7 @@ const Home = () => {
                   <p className='text-center py-4'>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Labore iure odit nemo. Deleniti aut blanditiis sit adipisci nisi dolorem animi, quibusdam tenetur obcaecati in quaerat reiciendis, quidem vitae velit voluptates.</p>
       </div>
 
-      <div className="mx-28 offer-container">
+      <div className="mx-3 md:mx-28 offer-container">
         <Offers />
       </div>
 
