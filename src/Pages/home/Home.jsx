@@ -46,7 +46,7 @@ const Home = () => {
           <h1 className="text-5xl text-whiteglow font-bold ">
             THE BEST TOURS IN JUST 3 CLICKS
           </h1>
-          <p className="text-sm text-whiteglow py-5">
+          <p className="sm:text-md text-whiteglow py-5">
             Enter a country, a city or even just a landmark and we'll find the right tours for you
           </p>
 
@@ -89,12 +89,12 @@ const Home = () => {
 
       {/* special offers block */}
 
-      <div className="mt-5">
-        <h1 className='text-center font-bold text-blacky-dark text-2xl'>Special Offers</h1>
-
+      <div className="mt-20 mb-12">
+        <h1 className='text-center mx-28 font-bold text-blacky-dark text-4xl'>Special Offers</h1>
+                  <p className='text-center py-4'>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Labore iure odit nemo. Deleniti aut blanditiis sit adipisci nisi dolorem animi, quibusdam tenetur obcaecati in quaerat reiciendis, quidem vitae velit voluptates.</p>
       </div>
 
-      <div className="mx-28">
+      <div className="mx-28 offer-container">
         <Offers />
       </div>
 
@@ -102,10 +102,10 @@ const Home = () => {
 
         {/* Trending destinations block */}
 
-        <div>
+        <div className='pt-28 pb-8'>
           <div className='text-center'>
-            <h1 className='font-bold text-2xl'>Trending Destinations</h1>
-            <p>Have a plan to go vacation? See trending destinations for your inspiration where to go.</p>
+            <h1 className='font-bold text-4xl'>Trending Destinations</h1>
+            <p className='text-lg pt-4'>Have a plan to go vacation? See trending destinations for your inspiration where to go.</p>
           </div>
         </div>
         <div className='grid md:mx-32 sm:grid-cols-2 md:grid-cols-3 gap-10 m-11'>
@@ -116,7 +116,7 @@ const Home = () => {
           <DestCard />
           <DestCard />
         </div>
-        <div className='p-7 text-center'>
+        <div className='p-7 text-center mb-12'>
           <button className='font-medium border-graydust-dark border p-2 rounded-md w-full sm:w-auto px-10 hover:bg-evergreen hover:text-whiteglow hover:border-transparent hover:transition-colors hover:duration-200' >More destinations</button>
         </div>
       </div >
@@ -124,7 +124,7 @@ const Home = () => {
       {/* Reviews block */}
 
       <div className='bg-graydust-light'>
-        <h1 className='font-bold text-2xl text-center pt-7'>Reviews</h1>
+        <h1 className='font-bold text-4xl text-center pt-7 mb-8'>Reviews</h1>
         <div className='hidden sm:block px-20'><Review /></div>
         <div className='sm:hidden'><ReviewMob /></div>
         <div className='text-center py-10 px-7'><button className='bg-blacky-dark text-whiteglow font-semibold p-2 px-10 rounded-md w-full sm:w-auto hover:bg-evergreen hover:text-blacky-dark hover:transition-colors hover:duration-200'>More reviews</button></div>

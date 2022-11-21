@@ -5,6 +5,8 @@ import { Navbar } from 'flowbite-react/lib/cjs/components/Navbar';
 import { Button } from 'flowbite-react/lib/cjs/components/Button';
 const NavbarTest = () => {
     const [stickyClass, setStickyClass] = useState('sm:bg-transparent absolute');
+    const [stickyClasstext, setStickyClasstext] = useState('text-whiteglow');
+
 
   useEffect(() => {
     window.addEventListener('scroll', stickNavbar);
@@ -17,7 +19,9 @@ const NavbarTest = () => {
   const stickNavbar = () => {
     if (window !== undefined) {
       let windowHeight = window.scrollY;
-      windowHeight > 500 ? setStickyClass('fixed top-0 left-0 right-0  bg-white shadow-md') : setStickyClass('sm:bg-transparent absolute');
+      windowHeight > 500 ? setStickyClass('fixed top-0 left-0 right-0  bg-white shadow-md'): setStickyClass('sm:bg-transparent absolute');
+      windowHeight > 500 ? setStickyClasstext('text-blacky-dark'): setStickyClasstext('text-whiteglow');
+
     }
   };
 
@@ -54,20 +58,20 @@ const NavbarTest = () => {
     <Navbar.Toggle />
   </div>
   <Navbar.Collapse>
-  <Navbar.Link href="/"
-                        class="p-3 sm:p-0 text-sm text-blacky-light hover:text-evergreen duration-500">
+  <Navbar.Link href="/" 
+                        class={`p-3 sm:p-0 text-lg ${stickyClasstext} hover:text-evergreen duration-500`}>
                         Home
                     </Navbar.Link>
                     <Navbar.Link href="/bid-status"
-                        class="p-3 sm:p-0 text-sm text-blacky-light hover:text-evergreen duration-500">
+                        class={`p-3 sm:p-0 text-lg ${stickyClasstext} hover:text-evergreen duration-500`}>
                         My bids
                     </Navbar.Link>
                     <Navbar.Link href="/"
-                        class="p-3 sm:p-0 text-sm  text-blacky-light hover:text-evergreen duration-500">
+                        class={`p-3 sm:p-0 text-lg ${stickyClasstext} hover:text-evergreen duration-500`}>
                         About
                     </Navbar.Link>
                     <Navbar.Link href="/"
-                        class="p-3 sm:p-0 text-sm  text-blacky-light hover:text-evergreen duration-500 ">
+                        class={`p-3 sm:p-0 text-lg ${stickyClasstext} hover:text-evergreen duration-500`} >
                         Contact
                     </Navbar.Link>
   </Navbar.Collapse>
