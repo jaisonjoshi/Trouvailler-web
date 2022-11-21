@@ -5,9 +5,11 @@ import Slider from "react-slick";
 
 const Reviews = () => {
     var settings = {
-        dots: true,
+        dots: false,
         infinite: true,
         speed: 500,
+        arrows:false,
+
         slidesToShow: 3,
         slidesToScroll: 1,
         responsive: [

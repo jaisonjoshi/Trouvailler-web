@@ -36,8 +36,8 @@ const Footer = () => {
           <h5 className='text-sm pb-3'>Your email</h5>
           <div className='flex overflow-hidden h-11 rounded-lg w-full'>
             <div><input type="text" className='h-full grow text-blacky-dark p-3 focus:outline-evergreen' /></div>
-            <button className='flex-none bg-evergreen rounded-r-lg h-auto'><FontAwesomeIcon className='px-4' icon={faPaperPlane} /></button>
-          </div>
+{/*             <button className='flex-none bg-evergreen rounded-r-lg h-auto'><FontAwesomeIcon className='px-4' icon={faPaperPlane} /></button>
+ */}          </div>
           </div>
         </div>
 
