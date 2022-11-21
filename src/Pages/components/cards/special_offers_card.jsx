@@ -6,7 +6,7 @@ import Slider from "react-slick";
 const Offers = () => {
 
   var settings = {
-    dots: false,
+    dots: true,
     arrows: false,
     speed: 500,
     Infinite:true,
@@ -27,7 +27,7 @@ const Offers = () => {
       {
         breakpoint: 640,
         settings: {
-          slidesToShow: 1.5,
+          slidesToShow: 1.2,
           slidesToScroll: 1,
           initialSlide: 2
         }

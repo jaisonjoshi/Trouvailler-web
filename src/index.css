@@ -11,6 +11,11 @@
         padding: 0 34% 0;
     }
   }
+  @media only screen and (max-width: 640px) {
+    .offerSlider .slick-list {
+        padding: 0 20% 0;
+    }
+  }
 input{outline: none;}
 
 .bordercolour{
@@ -53,9 +58,9 @@ input{outline: none;}
 .marginmtop{
     margin-top: -11rem;
 }
-
+/* 
 * {
     background: #000 !important;
     color: #0f0 !important;
     outline: solid #f00 1px !important;
-  }
+  } */

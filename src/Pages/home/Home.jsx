@@ -65,8 +65,8 @@ const Home = () => {
 
       {/* Bid section */}
 
-      <div className='md:flex bg-blacky-light sm:pl-8 xl:pl-20 w-full h-1/6'>
-        <div className='w-full md:w-2/3'>
+      <div className='md:flex  bg-blacky-light sm:pl-8 xl:pl-20 w-full h-1/6'>
+        <div className='w-full md:1/2 lg:w-2/3'>
           <div className="p-10 flex">
             <div className="">
               <img className='w-20 h-20' src={require('../Assets/clock.png')}></img>
@@ -79,15 +79,15 @@ const Home = () => {
           <h1 className='font-bold text-4xl text-evergreen px-10 md:px-20 py-2'>
             Bid for today
           </h1>
-          <p className="text-justify text-whiteglow px-10 md:px-20 py-3">Wish you could bid hotel prices for your budget and make your trip more pocket friendly? Here's an end to your worries because we let you place your bid for today's lowest hotel prices. </p>
+          <p className=" text-whiteglow px-10 md:px-20 py-3">Wish you could bid hotel prices for your budget and make your trip more pocket friendly? Here's an end to your worries because we let you place your bid for today's lowest hotel prices. </p>
           <h2 className="text-3xl text-whiteglow font-bold px-10 md:px-20 py-2">Intersting isn't it?</h2>
 
           <div className="px-10 md:px-20 py-5 pb-12">
             <button className='font-bold text-lg border p-2 rounded-md w-full sm:w-48 bg-whiteglow hover:bg-evergreen border-transparent hover:border-transparent hover:transition-colors hover:duration-200' ><Link className="" to="/what-is-bid">Know More</Link></button>
           </div>
         </div>
-        <div className="md:w-1/3 ">
-          <img className="marginmtop h-full w-full" src={require('../Assets/Image.png')}></img>
+        <div className="md:1/2 lg:w-1/3 flex items-end justify-end">
+          <img className="w-[80%] sm:w-1/2 md:w-full sm:-mt-40 " src={require('../Assets/Image.png')}></img>
         </div>
       </div>
 
@@ -131,7 +131,7 @@ const Home = () => {
         <h1 className='font-bold text-4xl text-center pt-7 mb-8'>Reviews</h1>
         <div className='hidden sm:block px-20'><Review /></div>
         <div className='sm:hidden'><ReviewMob /></div>
-        <div className='text-center py-10 px-7'><button className='bg-blacky-dark text-whiteglow font-semibold p-2 px-10 rounded-md w-full sm:w-auto hover:bg-evergreen hover:text-blacky-dark hover:transition-colors hover:duration-200'>More reviews</button></div>
+        <div className='text-center py-10 px-7'><button className='bg-blacky-dark text-whiteglow font-semibold p-2 px-10 rounded-md  sm:w-auto hover:bg-evergreen hover:text-blacky-dark hover:transition-colors hover:duration-200'>More reviews</button></div>
       </div>
 
       {/* Footer block */}

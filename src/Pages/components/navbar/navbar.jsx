@@ -29,7 +29,7 @@ const NavbarTest = () => {
         <div>
             <Navbar className={` w-full z-50 top-0 left-0  px-8 transition-all duration-500 ease-in-out ${stickyClass}`}
   fluid={true}
-  rounded={true}
+  
 >
   <Navbar.Brand href="https://flowbite.com/">
   <img
