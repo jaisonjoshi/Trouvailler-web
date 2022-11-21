@@ -9,12 +9,10 @@ const BidStatusCard = () => {
                 <div className='flex justify-between flex-wrap'>
                     <h1 className='text-2xl font-bold text-blacky-light'><span className='text-3xl font-light pr-2'><FontAwesomeIcon icon={solid('location-dot')} /></span>Where you want to go</h1>
                     <div className='bg-status-150 p-2 rounded-full border-graydust-normal'><h3><span className='text-status-100'><FontAwesomeIcon icon={solid('circle-check')} /></span> Accepted</h3> </div>
-                    {/* Code for other status indicators */}
-                    <div className='bg-status-250 p-2 rounded-full border-graydust-normal'><h3><span className='text-status-200'><FontAwesomeIcon icon={solid('circle-notch')} /></span> In progress</h3> </div>
-                    <div className='bg-status-350 p-2 rounded-full border-graydust-normal'><h3><span className='text-status-300'><FontAwesomeIcon icon={solid('circle-exclamation')} /></span> Failed</h3> </div>
+                    
                 </div>
                 <div className='flex py-2'>
-                    <FontAwesomeIcon className='text-xl text-blacky-light' icon={solid('calendar-week')} />
+                    <FontAwesomeIcon className='text-xl text-blacky-light items-center self-center pr-3' icon={solid('calendar-week')} />
                     <div className='p-2'>
                         <p className='text-graydust-normal'>Check In</p>
                         <p>10-09-2022</p>
@@ -32,7 +30,7 @@ const BidStatusCard = () => {
                 </div>
                 <hr className='mt-5 text-graydust-medium' />
                 <details>
-                <summary>
+                <summary className='py-5'>
                     <span className='pl-3'>
                     Lorem Ipsum and 2 others accepted your Bid
                     </span>
