@@ -35,13 +35,17 @@ const Home = () => {
       <div className=" w-full h-screen">
            <NavbarTest/>
              <Slider {...settings}>
-                {carouselImgs.map((img)=> (
-            <img src={img} className="w-screen h-screen" alt="img"></img>
-          ))}
-          
+                <div className='pic1 w-screen h-screen'>wcff</div>
+                <div className='pic2 w-screen h-screen'></div>
+                <div className='pic3 w-screen h-screen'></div>
+
+                <div className='pic4 w-screen h-screen'></div>
+
+                <div className='pic5 w-screen h-screen'></div>
+
 
         </Slider>
-        <div className=" absolute top-0 h-[100vh] flex items-center pl-40">
+        <div className=" absolute top-0 h-[100vh] flex items-center pl-16 lg:pl-40 pr-12 md:pr-0">
           <div>
           <h1 className="text-5xl text-whiteglow font-bold ">
             THE BEST TOURS IN JUST 3 CLICKS
@@ -61,7 +65,7 @@ const Home = () => {
 
       {/* Bid section */}
 
-      <div className='md:flex bg-blacky-light sm:pl-20 w-full h-1/6'>
+      <div className='md:flex bg-blacky-light sm:pl-8 xl:pl-20 w-full h-1/6'>
         <div className='w-full md:w-2/3'>
           <div className="p-10 flex">
             <div className="">
@@ -72,18 +76,18 @@ const Home = () => {
             </div>
           </div>
 
-          <h1 className='font-bold text-4xl text-evergreen px-20 py-2'>
+          <h1 className='font-bold text-4xl text-evergreen px-10 md:px-20 py-2'>
             Bid for today
           </h1>
-          <p className="text-justify text-whiteglow px-20 py-3">Wish you could bid hotel prices for your budget and make your trip more pocket friendly? Here's an end to your worries because we let you place your bid for today's lowest hotel prices. </p>
-          <h2 className="text-3xl text-whiteglow font-bold px-20 py-2">Intersting isn't it?</h2>
+          <p className="text-justify text-whiteglow px-10 md:px-20 py-3">Wish you could bid hotel prices for your budget and make your trip more pocket friendly? Here's an end to your worries because we let you place your bid for today's lowest hotel prices. </p>
+          <h2 className="text-3xl text-whiteglow font-bold px-10 md:px-20 py-2">Intersting isn't it?</h2>
 
-          <div className="px-20 py-5">
+          <div className="px-10 md:px-20 py-5 pb-12">
             <button className='font-bold text-lg border p-2 rounded-md w-full sm:w-48 bg-whiteglow hover:bg-evergreen border-transparent hover:border-transparent hover:transition-colors hover:duration-200' ><Link className="" to="/what-is-bid">Know More</Link></button>
           </div>
         </div>
         <div className="md:w-1/3 ">
-          <img className="object-cover h-full w-full" src={require('../Assets/Image.png')}></img>
+          <img className="marginmtop h-full w-full" src={require('../Assets/Image.png')}></img>
         </div>
       </div>
 
@@ -91,10 +95,10 @@ const Home = () => {
 
       <div className="mt-20 mb-12">
         <h1 className='text-center mx-28 font-bold text-blacky-dark text-4xl'>Special Offers</h1>
-                  <p className='text-center py-4'>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Labore iure odit nemo. Deleniti aut blanditiis sit adipisci nisi dolorem animi, quibusdam tenetur obcaecati in quaerat reiciendis, quidem vitae velit voluptates.</p>
+                  <p className='text-center py-4 mx-12'>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Labore iure odit nemo. Deleniti aut blanditiis sit adipisci nisi dolorem animi, quibusdam tenetur obcaecati in quaerat reiciendis, quidem vitae velit voluptates.</p>
       </div>
 
-      <div className="mx-3 md:mx-28 offer-container">
+      <div className=" mx-8 md:mx-16 offer-container">
         <Offers />
       </div>
 
@@ -108,7 +112,7 @@ const Home = () => {
             <p className='text-lg pt-4'>Have a plan to go vacation? See trending destinations for your inspiration where to go.</p>
           </div>
         </div>
-        <div className='grid md:mx-32 sm:grid-cols-2 md:grid-cols-3 gap-10 m-11'>
+        <div className='grid md:mx-16 sm:grid-cols-2 sm:grid-cols-2 xl:grid-cols-3 gap-10 m-11'>
           <DestCard />
           <DestCard />
           <DestCard />

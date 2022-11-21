@@ -6,7 +6,7 @@ const BidStatus = () => {
     return (
         <div>
             <Navbar />
-            <div className='mx-28  xl:mx-40 pb-16'>
+            <div className='mx-28  xl:mx-40 pb-16 mt-40'>
                 <h1 className='text-2xl font-bold text-blacky-bright py-7'>Bid Status</h1>
                 <BidStatusCard />
                 <BidStatusCard />

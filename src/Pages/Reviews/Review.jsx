@@ -9,7 +9,16 @@ const Reviews = () => {
         infinite: true,
         speed: 500,
         slidesToShow: 3,
-        slidesToScroll: 1
+        slidesToScroll: 1,
+        responsive: [
+            {
+                breakpoint: 1024,
+            settings: {
+                slidesToShow:2,
+                slidesToScroll:1
+            },
+            }
+        ]
     };
     return (
         <Slider {...settings}>
@@ -25,13 +34,13 @@ const ReviewsCard = () => {
     return (
         <div>
 
-            <div className='p-10'>
+            <div className="p-20 sm:p-20">
                 <div className='flex justify-center'>
                     <div className='w-2/5 h-2/5 rounded-full'>
                         <img className='w-full object-cover' src={require('../Assets/avatar.png')} alt="Avatar" />
                     </div>
                 </div>
-                <p className='text-justify pt-10'>
+                <p className='text-center pt-10'>
                     I quickly found the right tour for me, but I had a few questions about the hotel, I wrote to tech support and they answered all my questions within an hour. The vacation itself was perfect. Thank you very much. I will come back again and again.
                 </p>
                 <div className='pt-5'>

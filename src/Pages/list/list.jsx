@@ -1,18 +1,20 @@
 import React from 'react'
-import Navbar from '../components/navbar/navbar'
 import List1 from '../components/cards/list1'
 import List2 from '../components/cards/list2'
 import Footer from '../components/Footer/Footer'
 import Flowbite from "flowbite-react"
 import { Dropdown } from 'flowbite-react/lib/cjs/components/Dropdown';
-
+import NavbarTest from '../components/navbar/navbar'
+import SearchIcon from '@mui/icons-material/Search';
 const Home = () => {
     return (
-        <div className="">
-            <Navbar />
-            <div className="md:flex justify-center items-center">
+        <div className="mt-32">
+            <NavbarTest />
+            <div className="md:flex justify-center items-center w-[80%] mx-auto">
                 <div className="flex">
-                    <input type="text" className="m-3 w-48 flex md:justify-center sm:justify-start items-center text-blacky-light border border-none focus:ring-0 focus:ring-offset-0 focus:border-graydust-medium outline-none shadow-sm shadow-gray-500 rounded-2xl text-xs" placeholder="Search" />
+                    <div className="flex items-center justify-between focus:ring-0 focus:ring-offset-0 focus:border-graydust-medium outline-none shadow-sm shadow-gray-500 rounded-2xl text-xs py-2 pl-3">
+                        <input type="text border-none outline-none w-[80%] h-[100%] text-2xl" placeholder="Destination"/><SearchIcon  className='w=[20%] mx-3 cursor-pointer'/>
+                    </div>
                 </div>
 
                 {/*Drop down of categories */}
@@ -130,7 +132,7 @@ const Home = () => {
                 </Dropdown>
 
             </div>
-            <hr className="w-full my-5" />
+            <hr className="w-[80%] my-5 mx-auto" />
             <div className="lg:mx-28 grid sm:grid-cols-2 md:grid-cols-3 gap-5 m-11">
                 <List1 />
                 <List2 />

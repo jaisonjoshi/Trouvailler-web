@@ -19,13 +19,13 @@ const Offers = () => {
       {
         breakpoint: 1024,
         settings: {
-          slidesToShow: 2.5,
+          slidesToShow: 1.5,
           slidesToScroll: 3,
           dots: false
         }
       },
       {
-        breakpoint: 600,
+        breakpoint: 640,
         settings: {
           slidesToShow: 1.5,
           slidesToScroll: 1,
@@ -51,7 +51,7 @@ const Offers = () => {
 const OfferCard = () => {
   return (
 
-    <div className=" rounded-md mx-8">
+    <div className=" rounded-md mr-8">
       <div className="relative w-full">
         <img src={require('../../Assets/SpecialOffer.png')} alt="" className=" rounded-md h-auto w-full " />
         <div className="absolute bg-graydust-light opacity-90 bottom-2 w-[96%] left-[50%] translate-x-[-50%] flex rounded-lg p-2">
