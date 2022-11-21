@@ -12,7 +12,7 @@ const Home = () => {
             <Navbar />
             <div className="md:flex justify-center items-center">
                 <div className="flex">
-                    <input type="text" className="m-3 w-48 flex md:justify-center sm:justify-start items-center text-blacky-light border border-none focus:ring-0 focus:ring-offset-0 focus:border-graydust-medium outline-none shadow-lg shadow-gray-500 rounded-2xl text-xs" placeholder="Search" />
+                    <input type="text" className="m-3 w-48 flex md:justify-center sm:justify-start items-center text-blacky-light border border-none focus:ring-0 focus:ring-offset-0 focus:border-graydust-medium outline-none shadow-sm shadow-gray-500 rounded-2xl text-xs" placeholder="Search" />
                 </div>
 
                 {/*Drop down of categories */}
@@ -20,7 +20,7 @@ const Home = () => {
                 <Dropdown
                     label="Categories"
                     dismissOnClick={false}
-                    class="m-3 w-48 flex md:justify-center sm:justify-start items-center text-blacky-light  shadow-lg shadow-gray-500 rounded-2xl text-xs">
+                    class="m-3 w-48 flex md:justify-center sm:justify-start items-center text-blacky-light  shadow-sm shadow-gray-500 rounded-2xl text-xs">
                     <Dropdown.Item>
                         <input type="checkbox" className=" accent-evergreen" id="honeymoon" name="" value="" />
                         <label for="honeymoon" className="pl-3 text-base text-blacky-bright"> Honeymoon</label><br />
@@ -45,7 +45,7 @@ const Home = () => {
                 <Dropdown
                     label="Budget"
                     dismissOnClick={false}
-                    class="m-3 w-48 flex md:justify-center sm:justify-start items-center text-blacky-light  shadow-lg shadow-gray-500 rounded-2xl text-xs">
+                    class="m-3 w-48 flex md:justify-center sm:justify-start items-center text-blacky-light  shadow-sm shadow-gray-500 rounded-2xl text-xs">
                     <Dropdown.Item>
                         <input type="checkbox" className="accent-evergreen" id="budget1" name="" value="" />
                         <label for="budget1" className="pl-3 text-base text-blacky-bright"> Less than 10,000</label><br />
@@ -85,7 +85,7 @@ const Home = () => {
                 <Dropdown
                     label="Activities"
                     dismissOnClick={false}
-                    class="m-3 w-48 flex md:justify-center sm:justify-start items-center text-blacky-light  shadow-lg shadow-gray-500 rounded-2xl text-xs">
+                    class="m-3 w-48 flex md:justify-center sm:justify-start items-center text-blacky-light  shadow-sm shadow-gray-500 rounded-2xl text-xs">
                     <Dropdown.Item>
                         <input type="checkbox" className=" accent-evergreen" id="adventure" name="" value="" />
                         <label for="adventure" className="pl-3 text-base text-blacky-bright">Adventure</label><br />
@@ -111,7 +111,7 @@ const Home = () => {
                 <Dropdown
                     label="Rooms"
                     dismissOnClick={false}
-                    class="m-3 w-48 flex md:justify-center sm:justify-start items-center text-blacky-light  shadow-lg shadow-gray-500 rounded-2xl text-xs">
+                    class="m-3 w-48 flex md:justify-center sm:justify-start items-center text-blacky-light  shadow-sm shadow-gray-500 rounded-2xl text-xs">
                     <Dropdown.Item>
                         <input type="checkbox" className=" accent-evergreen" id="single-room" name="" value="" />
                         <label for="single-room" className="pl-3 text-base text-blacky-bright"> Single room</label><br />
@@ -131,7 +131,7 @@ const Home = () => {
 
             </div>
             <hr className="w-full my-5" />
-            <div className="grid sm:grid-cols-2 md:grid-cols-3 gap-5 m-11">
+            <div className="lg:mx-28 grid sm:grid-cols-2 md:grid-cols-3 gap-5 m-11">
                 <List1 />
                 <List2 />
                 <List1 />
