@@ -40,7 +40,7 @@ const IntroBid = () => {
             </div>
 
             {/* FAQ block */}
-            <div className='px-10 sm:px-32 bg-graydust-extralight'>
+            <div className='px-10 sm:px-16 lg:px-28 bg-graydust-extralight'>
                 <h1 className='pt-6 text-center font-bold text-2xl'>Frequently asked questions</h1>
                 <div className='pt-6 pb-16'>
                     <FAQ />

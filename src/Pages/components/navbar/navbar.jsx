@@ -68,10 +68,10 @@ const NavbarTest = () => {
                         class={`p-3 sm:p-0 text-lg text-blacky-dark hover:text-evergreen duration-500`}>
                         My bids
                     </Navbar.Link>
-                    <Navbar.Link href="/"
+                {/*     <Navbar.Link href="/"
                         class={`p-3 sm:p-0 text-lg text-blacky-dark hover:text-evergreen duration-500`}>
                         About
-                    </Navbar.Link>
+                    </Navbar.Link> */}
                     <Navbar.Link href="/"
                         class={`p-3 sm:p-0 text-lg text-blacky-dark hover:text-evergreen duration-500`} >
                         Contact
