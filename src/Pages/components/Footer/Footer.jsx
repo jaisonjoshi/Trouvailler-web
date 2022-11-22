@@ -30,18 +30,20 @@ const Footer = () => {
             <div><h5 className='text-sm p-4'>Page title</h5></div>
           </div>
         </div>
-        <div className='md:hidden text-whiteglow p-4'>
+        <div className='md:hidden text-whiteglow p-4 '>
+          <div className="w-fit mx-auto">
           <h3 className='text-lg'>Subscribe to Newsletter</h3>
           <h5 className='text-sm pb-3'>Your email</h5>
           <div className='flex overflow-hidden h-11 rounded-lg w-full'>
-            <div><input type="text" className='h-full grow text-blacky-dark p-3 focus:outline-evergreen' /></div>
-            <button className='flex-none bg-evergreen rounded-r-lg h-auto'><FontAwesomeIcon className='px-4' icon={faPaperPlane} /></button>
+            <div><input type="text" className='h-full text-blacky-dark p-3 focus:outline-evergreen' /></div>
+            <button className='flex-none bg-evergreen rounded-r-lg h-auto p-3'><FontAwesomeIcon className='' icon={faPaperPlane} /></button>
+          </div>
           </div>
         </div>
 
         <div className='border-t-2 border-graydust-medium flex justify-between align-middle  p-6  mx-4 sm:mx-10'>
           <a href="" className='w-4/12 sm:w-1/12'>
-            <img src={Logo} alt="Trouvailler" className='w-3/4'/>
+            <img src={Logo} alt="Trouvailler" className='sm:w-100 xl:w-3/4'/>
           </a>
           <div className='flex justify-evenly'>
             <a href="">

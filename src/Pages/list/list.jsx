@@ -1,19 +1,49 @@
-import React from 'react'
-import Navbar from '../components/navbar/navbar'
+import React, { useState } from 'react'
 import List1 from '../components/cards/list1'
 import List2 from '../components/cards/list2'
 import Footer from '../components/Footer/Footer'
 import Flowbite from "flowbite-react"
 import { Dropdown } from 'flowbite-react/lib/cjs/components/Dropdown';
+import NavbarTest from '../components/navbar/navbar'
+import SearchIcon from '@mui/icons-material/Search';
+
+
 
 const Home = () => {
+    const [ info, setInfo] = useState({})
+    const [url, setUrl] = useState("");
+    const handleSearchChange = (e) => {
+        setInfo((prev) => ({...prev, [e.target.name] : e.target.value}))
+    }
+
+    const handleChange = (e) =>{
+        const {name,value, checked } =e.target;
+        console.log(`${value} is ${checked}`)
+
+        if(checked) {
+            setInfo((prev) => ({...prev, [e.target.name] : e.target.value}))
+        }
+        else{
+            setInfo((prev) => ({...prev, [e.target.name] :""}))
+        }
+        
+    }
+    console.log(info)
+    const handleClick = () => {
+        console.log("i'm going to search for", info.destination,info.checkboxValues)
+
+    }
+
     return (
-        <div className="">
-            <Navbar />
-            <div className="md:flex justify-center items-center">
-                <div className="flex">
-                    <input type="text" className="m-3 w-48 flex md:justify-center sm:justify-start items-center text-blacky-light border border-none focus:ring-0 focus:ring-offset-0 focus:border-graydust-medium outline-none shadow-sm shadow-gray-500 rounded-2xl text-xs" placeholder="Search" />
+        <div className="mt-32">
+            <NavbarTest />
+            <div className="flex justify-center py-6">
+                    <div className="flex items-center w-[30%] justify-between focus:ring-0 focus:ring-offset-0 focus:border-graydust-medium outline-none shadow-sm shadow-gray-500 rounded-2xl text-xs py-2 pl-3">
+                        <input type="text border-none outline-none w-[80%] h-[100%] text-2xl" placeholder="Destination" id= "searchValue" name="destination" onChange={handleSearchChange}/><SearchIcon  className='w=[20%] mx-3 cursor-pointer' onClick={handleClick}/>
+                    </div>
                 </div>
+            <div className="md:flex justify-center items-center w-[80%] mx-auto">
+               
 
                 {/*Drop down of categories */}
 
@@ -22,19 +52,19 @@ const Home = () => {
                     dismissOnClick={false}
                     class="m-3 w-48 flex md:justify-center sm:justify-start items-center text-blacky-light  shadow-sm shadow-gray-500 rounded-2xl text-xs">
                     <Dropdown.Item>
-                        <input type="checkbox" className=" accent-evergreen" id="honeymoon" name="" value="" />
+                        <input type="radio" className=" accent-evergreen" id="honeymoon" name="category" value="honeymoon" onChange={handleChange}/>
                         <label for="honeymoon" className="pl-3 text-base text-blacky-bright"> Honeymoon</label><br />
                     </Dropdown.Item>
                     <Dropdown.Item>
-                        <input type="checkbox" className="accent-evergreen" id="family" name="" value="" />
+                        <input type="radio" className="accent-evergreen" id="family" name="category" value="family" onChange={handleChange} />
                         <label for="family" className="pl-3 text-base text-blacky-bright"> Family</label><br />
                     </Dropdown.Item>
                     <Dropdown.Item>
-                        <input type="checkbox" className="accent-evergreen" id="friends" name="" value="" />
+                        <input type="radio" className="accent-evergreen" id="friends" name="category" value="friends"  onChange={handleChange}/>
                         <label for="friends" className="pl-3 text-base text-blacky-bright"> Friends</label><br />
                     </Dropdown.Item>
                     <Dropdown.Item>
-                        <input type="checkbox" className="accent-evergreen" id="holiday" name="" value="" />
+                        <input type="radio" className="accent-evergreen" id="holiday" name="category" value="holiday" onChange={handleChange}/>
                         <label for="holiday" className="pl-3 text-base text-blacky-bright"> Holiday</label><br />
                     </Dropdown.Item>
                     <Dropdown.Item>
@@ -47,7 +77,7 @@ const Home = () => {
                     dismissOnClick={false}
                     class="m-3 w-48 flex md:justify-center sm:justify-start items-center text-blacky-light  shadow-sm shadow-gray-500 rounded-2xl text-xs">
                     <Dropdown.Item>
-                        <input type="checkbox" className="accent-evergreen" id="budget1" name="" value="" />
+                        <input type="checkbox" className="accent-evergreen" id="budget1" name="budget" value="below10000" onChange={handleChange} />
                         <label for="budget1" className="pl-3 text-base text-blacky-bright"> Less than 10,000</label><br />
                     </Dropdown.Item>
                     <Dropdown.Item>
@@ -130,7 +160,7 @@ const Home = () => {
                 </Dropdown>
 
             </div>
-            <hr className="w-full my-5" />
+            <hr className="w-[80%] my-5 mx-auto" />
             <div className="lg:mx-28 grid sm:grid-cols-2 md:grid-cols-3 gap-5 m-11">
                 <List1 />
                 <List2 />

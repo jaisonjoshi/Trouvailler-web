@@ -4,7 +4,7 @@ import "slick-carousel/slick/slick-theme.css";
 import Slider from "react-slick";
 import Footer from "../components/Footer/Footer"
 import Navbar from '../components/navbar/navbar'
-
+import WhatsAppIcon from '@mui/icons-material/WhatsApp';
 const Package = () => {
     var settings = {
         dots: true,
@@ -16,25 +16,25 @@ const Package = () => {
 
     return (
         <div>
-            <Navbar></Navbar>
+            <Navbar />
             {/* Header */}
-            <div>
+            <div className='mt-32'>
                 <div className='sm:flex'>
                     <Slider className='sm:w-1/2' {...settings}>
                         <img className='h-auto object-cover' src={require('../Assets/Rectangle 77.png')} alt="Car in road" />
                         <img className='h-auto object-cover' src={require('../Assets/Rectangle 77.png')} alt="Car in road" />
                         <img className='h-auto object-cover' src={require('../Assets/Rectangle 77.png')} alt="Car in road" />
                     </Slider>
-                    <div className='p-5 sm:w-1/2'>
+                    <div className='px-20 flex flex-col justify-center sm:w-1/2'>
                         <h1 className='text-2xl font-bold pb-5'>Neque porro quisquam est</h1>
                         <p>There are many variations of passages of Lorem Ipsum available, but the majority have suffered alteration in some form, by injected humour, or randomised words which don't look even slightly believable. If you are going to use a passage of Lorem Ipsum</p>
-                        <h3 className='font-bold text-sm'>2 Day 1 Night</h3>
+                        <h3 className='font-bold text-sm pt-4 text-xl'>2 Day 1 Night</h3>
                         <h1 className='font-semibold text-xl py-5'> 17,500/-<span className='text-sm line-through text-graydust-medium'>19,000/-</span></h1>
-                        <button className='bg-blacky-dark text-whiteglow font-bold p-4 w-full rounded'>Whats app us</button>
+                        <button className='bg-evergreen text-blacky-dark flex justify-center gap-3 items-center font-bold p-4 w-full rounded'><WhatsAppIcon /><span>WhatsApp Us</span></button>
                     </div>
                 </div>
 
-                <div className='sm:flex mb-10 sm:mx-32 lg:mx-52'>
+                <div className='sm:flex mb-10 sm:mx-16 lg:mx-20 mt-12'>
 
                     {/* Itinerary section*/}
 
@@ -67,7 +67,7 @@ const Package = () => {
                     {/* Related results */}
 
                     <div className='sm:w-1/4 p-5 shadow-lg shadow-graydust-normal m-3 rounded '>
-                        <div className='text-xl my-5 font-bold border-b w-36 border-graydust-normal'><h1>Related results</h1></div>
+                        <div className='text-xl my-5 font-bold border-b w-full '><h1>Related results</h1></div>
                     </div>
                 </div>
             </div>

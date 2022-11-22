@@ -9,7 +9,7 @@ const IntroBid = () => {
         <div>
             <Navbar />
             {/* Header */}
-            <div className="bg-green-slop bg-no-repeat w-full bg-cover text-left relative" >
+            <div className="bg-green-slop bg-no-repeat w-full bg-cover text-left relative mt-40" >
                 <div className='sm:w-1/2 p-10'>
                     <h1 className='text-3xl font-bold'>What is Bid for today? </h1>
                     <p className='pt-5 text-justify'>Every traveller’s dreams meets reality when you can reach your destination without letting your pockets go empty. Now place bids for hotel rates at your prices and decide to travel hazel free. To simply put it on, each day we let you  bid for  hotel rooms using our 'bid for today' feature and at the end of the day your bid status will be updated on our site, letting you know whether your bid is accepted or not. For every accepted  bid you'll get to occupy those hotel rooms at the rates you've bid for. </p>
@@ -40,7 +40,7 @@ const IntroBid = () => {
             </div>
 
             {/* FAQ block */}
-            <div className='px-10 sm:px-32 bg-graydust-extralight'>
+            <div className='px-10 sm:px-16 lg:px-28 bg-graydust-extralight'>
                 <h1 className='pt-6 text-center font-bold text-2xl'>Frequently asked questions</h1>
                 <div className='pt-6 pb-16'>
                     <FAQ />
